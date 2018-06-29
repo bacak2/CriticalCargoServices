@@ -1,0 +1,109 @@
+/*miesi�c*/
+.calendar_content_month	{width:70px;
+						 height:55px;
+						 position:relative;
+						}
+.calendar_content_month img 	{width:70px;
+							 height:55px;
+							 border:0px;
+							 cursor:pointer;
+							 position:absolute; left:0px; top: 0px;
+							}
+.calendar_content_month div.proper_content	{position:absolute; left:0px; top: 0px;}
+
+#calendar_content_from_ajax	{position:absolute; right:-50px; top:0px;
+							 z-index:100;
+							 background:white;
+							 border:2px solid #FF6928;
+							 padding:10px;
+							 color:black;
+							 font-size:12px;
+							}
+							
+#ab_calendar_more_button	{background: url('../images/next_button_small_orange.png') no-repeat;
+							 position:absolute; left:100px; top:5px;
+							 height:20px;
+							 width:20px;
+							 display:block;
+							}
+#ab_calendar_more_button:hover	{background: url('../images/next_button_small_orange_hover.png') no-repeat;}
+							
+#ab_calendar_close_button	{position:absolute; right:5px; top:5px;
+							 background: url('../images/close_button.png') no-repeat;
+							 height:20px;
+							 width:20px;
+							 cursor:pointer;
+							}
+#ab_calendar_close_button:hover	{background: url('../images/close_button_hover.png') no-repeat;}
+#ab_calendar_content_current_task	{font-weight:bold;
+									 margin:0px 30px 0px 0px;
+									}
+#ab_calendar_content_date	{float:left;
+							 font-size:16px;
+							}
+#ab_calendar_content_date a	{text-decoration:none; font-size: 16px;
+							 color:black;
+							}
+#ab_calendar_content_date a:hover	{color:#FF6928;}
+#ab_calendar_content_amount	{text-align:right;}
+#ab_calendar_content_past_task	{border-bottom:1px black dotted;
+								 padding:0px 0px 5px 0px;
+								 margin:0px 30px 15px 0px;
+								 text-align:right;
+								}
+.ab_calendar_content_customer	{margin:0px 0px 5px 0px;}
+.ab_calendar_content_customer_lp	{float:left;
+									 width:20px;
+									}
+.ab_calendar_content_customer_name	{float:left;
+									 width:190px;
+									 font-weight:bold;
+									}
+.ab_calendar_content_customer_name a	{color:black;
+									 text-decoration:none;
+									}
+.ab_calendar_content_customer_name a:hover	{color:#FF6928;}
+.ab_calendar_content_customer_date	{float:left;
+									 width:70px;
+									}
+									
+/*tydzie�*/
+.calendar_content_week_head	{position:relative;
+							}
+.calendar_content_week_customer	{margin:0px 0px 7px 0px;}
+.calendar_content_week_customer .name	{position:relative;}
+.calendar_content_week_customer .name span	{font-weight:bold;}
+.calendar_content_week_customer .name span.link	{text-decoration:none;
+												 font-weight:normal;
+												}
+.calendar_content_week_customer .name span.link:hover	{color:#FF6928;
+														 cursor:pointer;
+														}
+.ab_week_content_date	{font-size:16px;
+						 font-weight:bold;
+						 margin:0px 0px 10px 0px;
+						 text-align:center;
+						}
+.ab_week_content_date:hover	{color:#FF6928;
+							 cursor:pointer;
+							}
+ul.ab_week_content_menu	{position:absolute;	top:20px; right:-5px;
+						 padding:10px 5px;
+						 background:white;
+						 border:2px solid #FF6928;
+						 list-style-position:inside;
+						 list-style-type:none;
+						 display:none;
+						 z-index:100;
+						}
+ul.ab_week_content_menu li	{width:110px;
+						 padding:2px 0px;
+						}
+ul.ab_week_content_menu li.last	{font-weight:bold;
+								 border-top:1px black dotted;
+								 padding: 5px 0px 2px;
+								}
+ul.ab_week_content_menu li.last a	{color:black;
+								 text-decoration:none;
+								}
+ul.ab_week_content_menu li.last a:hover	{color:#FF6928;}

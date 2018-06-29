@@ -1,0 +1,178 @@
+.osoby_kontaktowe_tabelka	{border:1px solid #aaa;
+							 width:100%;
+							}
+.osoby_kontaktowe_tabelka td  {border:1px solid #aaa;
+							 padding:3px;
+							}
+.osoby_kontaktowe_tabelka tr.first	{background:#dfdfdf;
+									 color:#4f4f4f;
+									 text-align:center;
+									 font-weight:bold;
+									}
+
+.mepp_filters_top	{float:left;}
+.mepp_filters_top div.filter	{float:left;
+							 padding:5px 20px 5px 0px;
+							}	
+.mepp_filters_top div.long	{padding:10px 0px 10px;
+							 float:left;
+							}	
+.mepp_filters_top div.filter div {float:left; width:70px;}								
+.mepp_filters_top select	{border:1px solid #aaa;}				
+.mepp_filters_top input	{border:1px solid #aaa;}
+
+.ajax_box_comment 	{border:1px solid #aaa;
+					 margin:5px;
+					}
+.ajax_box_comment .ajax_box_comment_date 	{color:#aaa;
+											 font-size:.8em;
+											 text-align:right;
+											}
+.ajax_box_comment .ajax_box_comment_content	{}
+
+/*-------------------------------------------------------------------
+						KOMENTARZE
+  -------------------------------------------------------------------
+*/
+#comments_list	{margin:20px auto; background: #FFFFFF; width: 95%; padding: 5px;} 
+#comments_list .small_head_to_comments	{font-size:.8em;}
+#comments_list .event_comment	{border:2px solid #CCCCCC;
+                                                                width: 98%;
+								 padding:5px;
+								 margin:5px auto;
+								}
+#comments_list .event_comment .event_comment_head	{text-align:right;
+													 padding:0px 0px 10px 0px;
+													}
+#comments_list .event_comment .event_comment_body	{font-size:14px;}
+ 
+/*-------------------------------------------------------------------
+						RAPORTY
+  -------------------------------------------------------------------
+*/
+.raporty_mepp	{padding:5px;
+				 margin:0px 0px 40px;
+				 border-bottom:1px solid #aaa;
+				}
+.raporty_mepp a 	{color:white;}
+.raporty_mepp a:hover 	{color:black;}
+
+/*-------------------------------------------------------------------
+						ZDARZENIA
+  -------------------------------------------------------------------
+*/
+/*lista*/
+.table_event_col_lp		{width:20px;}
+td div.table_event_col_customer	{position:relative;
+								 font-size:11px;
+								}
+.cols span.event_date	{font-size:10px;
+						 float:right;
+						 text-align:right;
+						 display:block;
+						 color:#555;
+						}
+.cols span.event_content	{}
+.cols span.event_content:hover	{color:#ff6928;
+								 cursor:pointer;
+								}
+
+.event_done		{color:gray;}
+.priorytet_1	{color:red;}
+.priorytet_2	{color:green;}
+.priorytet_3	{color:blue;}
+
+.mepp_event_list_title	{font-weight:bold;
+						 display:block;
+						}
+/*ajax boxy*/
+.mepp_ajax_box		{position:absolute;
+					 z-index:100;
+					 background:white;
+					 border:2px solid #FF6928;
+					 padding:10px;
+					 color:black;
+					 font-size:12px;
+					}
+.mepp_close_ajax_box_button	{position:absolute; right:5px; top:5px;
+							 background: url('../images/close_button.png') no-repeat;
+							 height:20px;
+							 width:20px;
+							 cursor:pointer;
+							}
+.mepp_close_ajax_box_button:hover	{background: url('../images/close_button_hover.png') no-repeat;}
+
+/*event box*/
+.mepp_ajax_head_name	{border-bottom:1px dotted black;
+						 margin:0px 20px 0px 0px;
+						 padding:0px 0px 5px 0px;
+						 font-weight:bold;
+						}
+.mepp_ajax_head_date	{color:gray;
+						 text-align:right;
+						 font-size:10px;
+						 padding:0px 20px 10px 0px;
+						}
+.mepp_ajax_head_date span	{color:black;
+							 font-weight:bold;
+							}
+.mepp_ajax_head_date span.important_event	{color:red;}
+.mepp_ajax_title	{}
+.mepp_ajax_description	{border:1px #aaa solid;
+						 padding:5px;
+						 margin:2px 0px 10px;
+						 width:370px;
+						 font-size:0.9em;
+						 overflow: hidden;
+						}
+.mepp_ajax_description a	{color:black;}
+.mepp_ajax_description a:hover	{color:#ff6928;}
+.mepp_ajax_content		{width:380px;
+						 overflow: hidden;
+						 padding:0px 0px 5px;
+						 border-bottom:1px dotted black;
+						}
+.mepp_ajax_button	{margin:20px 0px 0px 150px;}
+
+/*
+  ---------------------------------------------------------------------
+           ZDARZENIA (wyświetlanie informacji za pomocą ajaxa)
+  ---------------------------------------------------------------------
+*/
+.mepp_ajax_description table td,
+div.mepp_ajax_content div.ajax_box_comment table td{
+    vertical-align: top;
+}
+.mepp_ajax_description table td.desc,
+div.mepp_ajax_content div.ajax_box_comment table td.desc{
+    font-weight: bold;
+    width: 70px;
+}
+div.mepp_ajax_content div.ajax_box_comment table{
+    margin: 0px 10px;
+}
+div.mepp_ajax_content div.ajax_box_comment div.ajax_box_comment_kontakt_name{
+    font-weight: bold;
+    padding: 1px 3px;
+}
+div.mepp_ajax_content div.ajax_box_comment input{
+    border:1px #AAAAAA solid;
+    width:100%;
+}
+div#nowa_osoba_kontaktowa{
+    font-weight: bold;
+    color: #AAAAAA;
+    text-align: center;
+}
+div#nowa_osoba_kontaktowa:hover{
+    color:black;
+    cursor:pointer;
+}
+
+
+a.ab_a{
+    color:black;
+}
+a.ab_a:hover{
+    color: #FF6928;
+}

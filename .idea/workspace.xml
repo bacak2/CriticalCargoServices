@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02e4a751-7738-4b66-a5bd-142fb2c33edd" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="usefull.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/classes/modules/usefull.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="519" column="45" lean-forward="true" selection-start-line="519" selection-start-column="45" selection-end-line="519" selection-end-column="45" />
+              <folding>
+                <marker date="1530276511015" expanded="true" signature="6137:6149" ph="..." />
+                <marker date="1530276511015" expanded="true" signature="6361:6373" ph="..." />
+                <marker date="1530276511015" expanded="true" signature="6593:6605" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zlecenia.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/include/classes/modules/zlecenia.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+              <folding>
+                <marker date="1530276533209" expanded="true" signature="12257:12347" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="12458:12525" ph="SELECT email... orderplus_przewoznik" />
+                <marker date="1530276533209" expanded="true" signature="13086:13180" ph="SELECT termi... orderplus_klient" />
+                <marker date="1530276533209" expanded="true" signature="15605:15620" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="15749:15789" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="15795:15801" ph=" " />
+                <marker date="1530276533209" expanded="true" signature="15801:15807" ph=" " />
+                <marker date="1530276533209" expanded="true" signature="15807:15813" ph=" " />
+                <marker date="1530276533209" expanded="true" signature="15813:15819" ph=" " />
+                <marker date="1530276533209" expanded="true" signature="15819:15825" ph=" " />
+                <marker date="1530276533209" expanded="true" signature="15894:15934" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="16196:16236" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="16561:16601" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="16843:16883" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="16980:17046" ph="UPDATE ${$this-&gt;Tabela}... " />
+                <marker date="1530276533209" expanded="true" signature="17144:17199" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="17641:17696" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="18196:18273" ph="SELECT * FRO... orderplus_zlecenie_klient" />
+                <marker date="1530276533209" expanded="true" signature="19203:19235" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="19368:19399" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="19945:20010" ph="SELECT id_ki... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="20068:20129" ph="SELECT * FRO... orderplus_kierowca" />
+                <marker date="1530276533209" expanded="true" signature="20604:20662" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="20742:20821" ph="SELECT * FRO... orderplus_kierowca" />
+                <marker date="1530276533209" expanded="true" signature="20881:20968" ph="SELECT * FRO... orderplus_przewoznik" />
+                <marker date="1530276533209" expanded="true" signature="21028:21140" ph="SELECT imie,... orderplus_uzytkownik" />
+                <marker date="1530276533209" expanded="true" signature="21205:21281" ph="SELECT * FRO... orderplus_szablon" />
+                <marker date="1530276533209" expanded="true" signature="23060:23160" ph="UPDATE orderplus_zlecenie... " />
+                <marker date="1530276533209" expanded="true" signature="24075:24087" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="24536:24576" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="25707:25765" ph="SELECT hash ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="27478:27607" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="29797:29809" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="32136:32176" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="33749:33902" ph="SELECT CONCA... orderplus_kierowca" />
+                <marker date="1530276533209" expanded="true" signature="33995:34086" ph="SELECT rejes... orderplus_kierowca" />
+                <marker date="1530276533209" expanded="true" signature="35061:35116" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="36819:36911" ph="UPDATE orderplus_klient... " />
+                <marker date="1530276533209" expanded="true" signature="37013:37130" ph="UPDATE orderplus_zlecenie_klient... " />
+                <marker date="1530276533209" expanded="true" signature="38166:38305" ph="SELECT count... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="38394:38469" ph="SELECT numer... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="38544:38612" ph="SELECT numer... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="38991:39081" ph="SELECT max(n... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="39168:39267" ph="SELECT ident... orderplus_przewoznik" />
+                <marker date="1530276533209" expanded="true" signature="39607:39671" ph="SELECT id_od... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="39717:39888" ph="SELECT count... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="39977:40052" ph="SELECT numer... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="40127:40191" ph="SELECT * FRO... orderplus_oddzial" />
+                <marker date="1530276533209" expanded="true" signature="40356:40424" ph="SELECT numer... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="40792:40870" ph="SELECT * FRO... orderplus_oddzial" />
+                <marker date="1530276533209" expanded="true" signature="41612:41859" ph="SELECT max(n... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="41986:42199" ph="SELECT max(n... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="42340:42536" ph="SELECT max(n... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="42703:42802" ph="SELECT ident... orderplus_przewoznik" />
+                <marker date="1530276533209" expanded="true" signature="43378:43384" ph=" " />
+                <marker date="1530276533209" expanded="true" signature="43384:43390" ph=" " />
+                <marker date="1530276533209" expanded="true" signature="43525:43531" ph=" " />
+                <marker date="1530276533209" expanded="true" signature="43531:43537" ph=" " />
+                <marker date="1530276533209" expanded="true" signature="43892:43961" ph="SELECT hash ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="44126:44200" ph="SELECT edyto... ${$this-&gt;Tabela}" />
+                <marker date="1530276533209" expanded="true" signature="46178:46220" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="46221:46315" ph="..." />
+                <marker date="1530276533209" expanded="false" signature="46274:46287" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="46365:46379" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="46534:46807" ph="..." />
+                <marker date="1530276533209" expanded="true" signature="46584:46774" ph="{...}" />
+                <marker date="1530276533209" expanded="true" signature="46625:46749" ph="{&quot;path&quot;: '../../../js/ZeroClipboard.swf'...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="specyfikacja_do_faktury.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/specyfikacja_do_faktury.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>edycja</find>
+      <find>nowe</find>
+      <find>dro</find>
+      <find>termin p</find>
+      <find>status</find>
+      <find>Status - przewoźnik</find>
+      <find>drobne</find>
+      <find>opis ła</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/configure.php" />
+        <option value="$PROJECT_DIR$/include/classes/modules/tabela_rozliczen.class.php" />
+        <option value="$PROJECT_DIR$/include/classes/modules/usefull.class.php" />
+        <option value="$PROJECT_DIR$/include/classes/modules/zlecenia.class.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="12" />
+    <option name="y" value="411" />
+    <option name="width" value="1270" />
+    <option name="height" value="726" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CriticalCS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CriticalCS" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CriticalCS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CriticalCS" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="include" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CriticalCS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CriticalCS" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="include" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02e4a751-7738-4b66-a5bd-142fb2c33edd" name="Default" comment="" />
+      <created>1530273248797</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530273248797</updated>
+      <workItem from="1530273252943" duration="3150000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3150000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="-1" width="1442" height="881" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="38" lean-forward="true" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/podglad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/classes/modules/przewoznicy.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="32" column="148" lean-forward="false" selection-start-line="32" selection-start-column="145" selection-end-line="32" selection-end-column="148" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/classes/modules/tabela_rozliczen.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="70" column="35" lean-forward="true" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="58" />
+          <folding>
+            <marker date="1530275398040" expanded="true" signature="16895:16941" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530275398040" expanded="true" signature="19011:19066" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530275398040" expanded="true" signature="23835:23847" ph="..." />
+            <marker date="1530275398040" expanded="true" signature="26178:26218" ph="..." />
+            <marker date="1530275398040" expanded="true" signature="26393:26448" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530275398040" expanded="true" signature="28879:28973" ph="..." />
+            <marker date="1530275398040" expanded="true" signature="29094:29106" ph="..." />
+            <marker date="1530275398040" expanded="true" signature="29154:29201" ph="..." />
+            <marker date="1530275398040" expanded="true" signature="29274:29286" ph="..." />
+            <marker date="1530275398040" expanded="true" signature="31943:31954" ph="..." />
+            <marker date="1530275398040" expanded="true" signature="32278:32318" ph="..." />
+            <marker date="1530275398040" expanded="true" signature="32662:32694" ph="..." />
+            <marker date="1530275398040" expanded="true" signature="34642:34654" ph="..." />
+            <marker date="1530275398040" expanded="true" signature="36917:36972" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530275398040" expanded="true" signature="37024:37095" ph="SELECT * FRO... orderplus_klient" />
+            <marker date="1530275398040" expanded="true" signature="37163:37389" ph="SELECT z.id_... orderplus_zlecenie" />
+            <marker date="1530275398040" expanded="true" signature="38492:38547" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530275398040" expanded="true" signature="38615:38841" ph="SELECT z.id_... orderplus_zlecenie" />
+            <marker date="1530275398040" expanded="true" signature="39240:39295" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530275398040" expanded="true" signature="39347:39418" ph="SELECT * FRO... orderplus_klient" />
+            <marker date="1530275398040" expanded="true" signature="41819:41880" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530275398040" expanded="true" signature="42123:42825" ph="INSERT INTO faktury_pozycje... " />
+            <marker date="1530275398040" expanded="true" signature="44196:44273" ph="UPDATE faktury... " />
+            <marker date="1530275398040" expanded="true" signature="47540:47610" ph="SELECT id_fa... ${$this-&gt;Tabela}" />
+            <marker date="1530275398040" expanded="true" signature="48598:48679" ph="SELECT is_ue... orderplus_kody_krajow" />
+            <marker date="1530275398040" expanded="true" signature="48831:48913" ph="SELECT is_ue... orderplus_kody_krajow" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/classes/modules/platnosci.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="55" column="192" lean-forward="false" selection-start-line="55" selection-start-column="192" selection-end-line="55" selection-end-column="192" />
+          <folding>
+            <marker date="1530261580469" expanded="true" signature="11281:11327" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530261580469" expanded="true" signature="12163:12244" ph="SELECT data_... faktury" />
+            <marker date="1530261580469" expanded="true" signature="15155:15423" ph="SELECT id_od... orderplus_oddzial" />
+            <marker date="1530261580469" expanded="true" signature="16982:17076" ph="..." />
+            <marker date="1530261580469" expanded="true" signature="17153:17182" ph="..." />
+            <marker date="1530261580469" expanded="true" signature="17994:18062" ph="SELECT numer... faktury" />
+            <marker date="1530261580469" expanded="true" signature="18154:18271" ph="UPDATE ${$this-&gt;Tabela}... " />
+            <marker date="1530261580469" expanded="true" signature="21366:21459" ph="SELECT termi... orderplus_szablon" />
+            <marker date="1530261580469" expanded="true" signature="21713:21777" ph="SELECT id_fa... ${$this-&gt;Tabela}" />
+            <marker date="1530261580469" expanded="true" signature="21911:21979" ph="SELECT data_... faktury" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/classes/modules/usefull.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="519" column="45" lean-forward="true" selection-start-line="519" selection-start-column="45" selection-end-line="519" selection-end-column="45" />
+          <folding>
+            <marker date="1530276511015" expanded="true" signature="6137:6149" ph="..." />
+            <marker date="1530276511015" expanded="true" signature="6361:6373" ph="..." />
+            <marker date="1530276511015" expanded="true" signature="6593:6605" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specyfikacja_do_faktury.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/classes/modules/zlecenia.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <marker date="1530276533209" expanded="true" signature="12257:12347" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="12458:12525" ph="SELECT email... orderplus_przewoznik" />
+            <marker date="1530276533209" expanded="true" signature="13086:13180" ph="SELECT termi... orderplus_klient" />
+            <marker date="1530276533209" expanded="true" signature="15605:15620" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="15749:15789" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="15795:15801" ph=" " />
+            <marker date="1530276533209" expanded="true" signature="15801:15807" ph=" " />
+            <marker date="1530276533209" expanded="true" signature="15807:15813" ph=" " />
+            <marker date="1530276533209" expanded="true" signature="15813:15819" ph=" " />
+            <marker date="1530276533209" expanded="true" signature="15819:15825" ph=" " />
+            <marker date="1530276533209" expanded="true" signature="15894:15934" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="16196:16236" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="16561:16601" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="16843:16883" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="16980:17046" ph="UPDATE ${$this-&gt;Tabela}... " />
+            <marker date="1530276533209" expanded="true" signature="17144:17199" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="17641:17696" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="18196:18273" ph="SELECT * FRO... orderplus_zlecenie_klient" />
+            <marker date="1530276533209" expanded="true" signature="19203:19235" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="19368:19399" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="19945:20010" ph="SELECT id_ki... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="20068:20129" ph="SELECT * FRO... orderplus_kierowca" />
+            <marker date="1530276533209" expanded="true" signature="20604:20662" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="20742:20821" ph="SELECT * FRO... orderplus_kierowca" />
+            <marker date="1530276533209" expanded="true" signature="20881:20968" ph="SELECT * FRO... orderplus_przewoznik" />
+            <marker date="1530276533209" expanded="true" signature="21028:21140" ph="SELECT imie,... orderplus_uzytkownik" />
+            <marker date="1530276533209" expanded="true" signature="21205:21281" ph="SELECT * FRO... orderplus_szablon" />
+            <marker date="1530276533209" expanded="true" signature="23060:23160" ph="UPDATE orderplus_zlecenie... " />
+            <marker date="1530276533209" expanded="true" signature="24075:24087" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="24536:24576" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="25707:25765" ph="SELECT hash ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="27478:27607" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="29797:29809" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="32136:32176" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="33749:33902" ph="SELECT CONCA... orderplus_kierowca" />
+            <marker date="1530276533209" expanded="true" signature="33995:34086" ph="SELECT rejes... orderplus_kierowca" />
+            <marker date="1530276533209" expanded="true" signature="35061:35116" ph="SELECT * FRO... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="36819:36911" ph="UPDATE orderplus_klient... " />
+            <marker date="1530276533209" expanded="true" signature="37013:37130" ph="UPDATE orderplus_zlecenie_klient... " />
+            <marker date="1530276533209" expanded="true" signature="38166:38305" ph="SELECT count... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="38394:38469" ph="SELECT numer... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="38544:38612" ph="SELECT numer... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="38991:39081" ph="SELECT max(n... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="39168:39267" ph="SELECT ident... orderplus_przewoznik" />
+            <marker date="1530276533209" expanded="true" signature="39607:39671" ph="SELECT id_od... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="39717:39888" ph="SELECT count... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="39977:40052" ph="SELECT numer... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="40127:40191" ph="SELECT * FRO... orderplus_oddzial" />
+            <marker date="1530276533209" expanded="true" signature="40356:40424" ph="SELECT numer... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="40792:40870" ph="SELECT * FRO... orderplus_oddzial" />
+            <marker date="1530276533209" expanded="true" signature="41612:41859" ph="SELECT max(n... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="41986:42199" ph="SELECT max(n... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="42340:42536" ph="SELECT max(n... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="42703:42802" ph="SELECT ident... orderplus_przewoznik" />
+            <marker date="1530276533209" expanded="true" signature="43378:43384" ph=" " />
+            <marker date="1530276533209" expanded="true" signature="43384:43390" ph=" " />
+            <marker date="1530276533209" expanded="true" signature="43525:43531" ph=" " />
+            <marker date="1530276533209" expanded="true" signature="43531:43537" ph=" " />
+            <marker date="1530276533209" expanded="true" signature="43892:43961" ph="SELECT hash ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="44126:44200" ph="SELECT edyto... ${$this-&gt;Tabela}" />
+            <marker date="1530276533209" expanded="true" signature="46178:46220" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="46221:46315" ph="..." />
+            <marker date="1530276533209" expanded="false" signature="46274:46287" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="46365:46379" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="46534:46807" ph="..." />
+            <marker date="1530276533209" expanded="true" signature="46584:46774" ph="{...}" />
+            <marker date="1530276533209" expanded="true" signature="46625:46749" ph="{&quot;path&quot;: '../../../js/ZeroClipboard.swf'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,52 @@
+<?php
+
+$Lang['FAKTURA_VAT'] = "Faktura VAT";
+$Lang['NR'] = "Nr";
+$Lang['ORYGINA'] = "ORYGINA£ / KOPIA";
+$Lang['DATA_WYSTAWIENIA'] = "Data wystawienia";
+$Lang['MIEJSCE_WYSTAWIENIA'] = "Miejsce wystawienia";
+$Lang['DATA_SPRZEDAZY'] = "Data sprzeda¿y";
+$Lang['TERMIN_PLATNOSCI'] = "Termin p³atno¶ci";
+$Lang['FORMA_PLATNOSCI'] = "Forma p³atno¶ci";
+$Lang['SPRZEDAWCA'] = "Sprzedawca";
+$Lang['NABYWCA'] = "Nabywca";
+$Lang['NUMER_BANKU'] = "Nr rachunku bankowego<br />";
+$Lang['NUMER_ZLECENIA_KLIENTA'] = "NUMER ZLECENIA KLIENTA<br>";
+$Lang['LP'] = "L.p.";
+$Lang['NAZWA'] = "Nazwa";
+$Lang['PKWIU_PKOB'] = "PKWiU/PKOB";
+$Lang['ILOSC'] = "Ilo¶æ";
+$Lang['JEDNOSTKA_MIARY'] = "J.m";
+$Lang['CENA_JEDNOSTKOWA'] = "Cena<br />jednostkowa";
+$Lang['WARTOSC_SPRZEDAZY'] = "Warto¶æ<br />sprzeda¿y";
+$Lang['VAT'] = "VAT";
+$Lang['NAZWA_USLUGI'] = "Wewn±trzwspólnotowa us³uga spedycyjna";
+$Lang['SZTUK'] = "szt.";
+$Lang['OGOLEM'] = "Ogó³em wg stawek VAT:";
+$Lang['WARTOSC_NETTO'] = "Warto¶æ netto";
+$Lang['KWOTA_VAT'] = "Kwota VAT";
+$Lang['WARTOSC_BRUTTO'] = "Warto¶æ brutto";
+$Lang['RAZEM'] = "Razem:";
+$Lang['DO_ZAPLATY'] = "Do zap³aty:";
+$Lang['SLOWNIE'] = "S³ownie:";
+$Lang['WYSTAWIENIE_FAKTURY'] = "Osoba upowa¿niona do wystawienia faktury";
+$Lang['ODBIOR_FAKTURY'] = "Osoba upowa¿niona do odbioru faktury";
+$Lang['NIP'] = "NIP";
+$Lang['TEL'] = 'tel.';
+$Lang['OPLACONA'] = 'Faktura op³acona';
+$Lang['NOTA_DLA'] = 'Dla';
+$Lang['NOTA_OB_NR'] = 'NOTA OBCI¡¯ENIOWA NR';
+$Lang['KWOTA_OBCIAZENIA'] = 'Kwota obci±¿enia';
+$Lang['PODPIS'] = 'podpis';
+$Lang['NUMER_ZLECENIA'] = 'Numer zlecenia';
+$Lang['ILOSC_KONT'] = 'ilo¶æ';
+$Lang['TYP'] = 'typ';
+$Lang['TOWAR'] = 'towar';
+$Lang['WAGA'] = 'waga';
+$Lang['ODBIORCA'] = 'Odbiorca';
+$Lang['ZALADOWCA'] = 'Za³adowca';
+$Lang['WARUNKI_DOSTAWY'] = 'Warunki dostawy';
+$Lang['BL_NO'] = 'B/L Numer';
+$Lang['STATEK'] = 'Statek';
+
+?>

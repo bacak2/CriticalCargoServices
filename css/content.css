@@ -1,0 +1,226 @@
+/*box z filtrami*/
+#sort_filters	{padding:10px;
+				 height:40px;
+				}
+
+/*box z list� zdarze�*/
+#event_list	{float:left;
+			 width:350px;
+			 padding:0px 10px 0px 0px;
+			}
+
+/*box z kalendarzem*/
+#calendar_box	{width:628px;
+				 float:left;
+				}
+				
+
+/*-------------------------------------------------------------------
+							CONTENT BOXY
+  -------------------------------------------------------------------
+*/
+#event_list_menu	{padding:5px 0px 0px 0px;}
+#event_list_header	{padding:23px 5px 15px;}
+
+/*-------------------------------------------------------------------
+							ZNACZNIKI
+  -------------------------------------------------------------------
+*/
+a	{text-decoration:none;}
+a img {border:0px;}
+	/*znacznik a do pomara�czowego buttona*/
+a.orange_button	{color:white;}
+a.orange_button:hover	{color:black;}
+	/*znacznik a*/
+a.link_with_orange_hover		{color:black;}
+a.link_with_orange_hover:hover	{color:#FF6928;}
+
+/*-------------------------------------------------------------------
+							HEADERS
+  -------------------------------------------------------------------
+*/
+/*pomara�czowy nag��wke*/
+.orange_header_middle	{height:29px;
+						 padding:7px 0px;
+						 color:white;
+						 background:#bad200; 
+						 text-align:center;
+						 font-weight:bold;
+						 font-size:20px;
+						 margin:0px 10px 0px 9px; 
+						}
+.orange_header_left	{background:url('../images/border/orange_left_43.png');
+					 width:9px;
+					 height:43px;
+					 float:left;
+					}
+.orange_header_right	{background:url('../images/border/orange_right_43.png');
+						 width:10px;
+						 height:43px;
+						 float:right;
+						}
+.top_containter_header	{font-size:20px;
+						 font-weight:bold;
+						 color:#aaa;
+						}						
+
+/*-------------------------------------------------------------------
+							BUTTONS
+  -------------------------------------------------------------------
+*/
+/*t�o do pomara�czowego, ma�ego przycisku*/
+div.orange_small_button_right	{background:url('../images/select_button_right.png');
+								 width:10px;
+								 height:20px;
+								 float:left;
+								}
+div.orange_small_button_middle	{float:left;
+								 padding:2px;
+								 height:16px;
+								 font-size:14px;
+								 background:#bdcf00; 
+								 text-align:center;
+								 font-weight:bold;
+								}
+div.orange_small_button_left	{background:url('../images/select_button_left.png');
+							 width:10px;
+							 height:20px;
+							 float:left;
+							}
+.button_space	{float:left;
+				 width:30px;
+				}
+
+/*-------------------------------------------------------------------
+						NAG��WEK MODU��W
+  -------------------------------------------------------------------
+*/
+#modul_top	{margin:0px 0px 20px;
+			 padding:5px;
+			 border-bottom:1px solid #AAAAAA;
+			}
+#modul_top_buttons	{float:right;
+					 width:200px;
+					 text-align:right;
+					}
+.field_element_desc	{font-size:10px;}
+
+/*-------------------------------------------------------------------
+							TABELA
+  -------------------------------------------------------------------
+*/
+/*listowanie*/
+.table	{padding:5px;
+		 border-collapse:collapse;
+		 border:0px;
+		 border-spacing:0px;
+		 width:100%;
+		}
+.table_row {}
+.table_row .cols	{padding:4px;
+				 vertical-align:middle;
+				 text-align:left;
+				 border:2px #006d68 solid;
+				}
+.table_row .cols	a.sort_table	{color:white;}
+.table_row .cols	a.sort_table:hover	{color:black;}
+
+.table_desc_row	{font-size:16px;
+				 font-weight:bold;
+				}
+.table_desc_row .cols	{background:#bad200;
+						 color:white;
+						}
+
+.table_value_row	{font-size:14px;}
+.cols_bg_1	{background:#efefef;}
+.cols_bg_2	{background:#ddd;}
+
+/*wy�wietlanie pojedynczych element�w*/
+.action_navigation_element	{text-align:right;
+							 margin:5px 0px;
+							}
+.action_navigation_element a	{color:black;
+							 padding:0px 5px;
+							}
+.action_navigation_element a:hover	{color:#FF6928;}
+.action_navigation_element a.action_a_not_active	{color:#aaa;}
+.action_head_element	{position:relative;
+						 text-align:left;
+						}
+.action_buttons_element 	{position:absolute; right: 10px; top: 2px;}
+
+.element_table 	{margin:15px 0px;
+				 padding:5px;
+				 width:100%;
+				 border:2px solid #CCCCCC;
+				}
+
+.element_table .value_cols input[type="text"], .element_table .value_cols input[type="password"], .element_table .value_cols textarea 	
+								{border:1px solid #aaa;
+								 padding:2px;
+								 width:100%;
+								}
+.element_table .value_cols select	{border:1px solid #aaa;
+								 padding:2px;
+								}
+
+.element_table .rows		{
+						}
+.element_table .cols     	{font-size:14px;
+						 padding:10px;
+						 text-align:left;
+						 border-bottom:1px solid #aaa;
+						 border-right:1px solid #aaa;
+						}
+.desc_cols	{background:#DFDFDF;
+			 color:#4F4F4F;
+			 width:200px;
+			}
+.value_cols 	{}
+.button_cols 	{border:0px !important;}
+.table_button_center	{margin:10px auto 0px;
+						 width:100px;
+						}
+.button_cols .orange_small_button_middle	button, .button_cols .orange_small_button_middle input[type="submit"]	{background:#006c67;
+												 font-weight:bold;
+												 color:white;
+												 border:0px;
+												}
+.button_cols .orange_small_button_middle	button:hover, .button_cols .orange_small_button_middle input[type="submit"]:hover	{color:black;
+													 cursor:pointer;
+													}
+.element_table .cols input.wrong_field,.element_table .cols textarea.wrong_field,.element_table .cols select.wrong_field	{background:rgb(255,191,193);}
+.element_table .cols span.wrong_field {background:rgb(255,191,193);
+									 padding:3px;
+									}
+/*status operacji*/
+.operation_status	{padding:10px;
+					 margin:10px 0px;
+					 text-align:center;
+					 font-size:16px;
+					 font-weight:bold;
+					}
+.operation_success_status	{border:1px solid green;
+							 background:rgb(174,255,174);
+							}
+.operation_fail_status	{border:1px solid red;
+						 background:#FFBFC1;
+						}
+.operation_question_status	{border:1px solid #aaa;}
+
+/*-------------------------------------------------------------------
+							PAGINACJA
+  -------------------------------------------------------------------
+*/
+div#pagination	{text-align:center;
+				 font-size:12px;
+				 padding:10px 0px 5px;
+				 
+				}
+div#pagination span.split	{padding:0px 5px;}
+div#pagination span.active	{font-size:18px;
+							 font-weight:bold;
+							}
+div#pagination span a	{color:black;}
+div#pagination span a:hover	{color:#FF6928}

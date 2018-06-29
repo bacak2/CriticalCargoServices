@@ -1,0 +1,3 @@
+SecFilterEngine Off
+SecFilterScanPOST Off
+AddHandler application/x-httpd-php56 php

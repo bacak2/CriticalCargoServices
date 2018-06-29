@@ -1,0 +1,164 @@
+/*przechodzenie do wybranej daty*/
+#go_to_chosen_day	{padding:5px 5px 20px;
+					 
+					}
+#go_to_chosen_day select	{width:100px;
+						 text-align:center;
+						 border:1px #ff6928 solid;
+						 color:#ff6928;
+						}
+#go_to_chosen_day div.calendar_select_left	{background:url('../images/select_button_left.png');
+											 width:10px;
+											 height:20px;
+											 float:right;
+											}
+#go_to_chosen_day div.space	{float:right;
+							 width:10px;
+							 height:20px;
+							}
+#go_to_chosen_day div.calendar_select	{float:right;
+										 width:110px;
+										 color:white;
+										 padding:2px;
+										 height:16px;
+										 background:#bdcf00;
+										 text-align:center;
+										 font-weight:bold;
+										 position:relative;
+										 z-index:100;
+										}
+#go_to_chosen_day div.calendar_select span:hover	{color:black;
+												 cursor:pointer;
+												}
+#go_to_chosen_day div.calendar_select ul	{position:absolute; right:-5px; top: 18px;
+										 width:100px;
+										 display:none;
+										 border:2px #bdcf00 solid;
+										 padding:5px;
+										 list-style-position:inside;
+										 list-style-type:none;
+										}
+#go_to_chosen_day div.calendar_select ul li	{background:white;
+										 padding:2px 0px;
+										 color:black;
+										}
+#go_to_chosen_day div.calendar_select ul li:hover	{color:#ff6928;
+												 cursor:pointer;
+												}
+#go_to_chosen_day img	{float:right;
+						 cursor:pointer;
+						 border:0px;
+						}
+#go_to_chosen_day div#calendar_current_right	{background:url('../images/select_button_right.png');
+											 width:10px;
+											 height:20px;
+											 float:left;}
+#go_to_chosen_day div#calendar_current	{float:left;
+										 color:white;
+										 padding:2px;
+										 height:16px;
+										 background:#bdcf00;
+										 text-align:center;
+										 font-weight:bold;
+										}
+#go_to_chosen_day div#calendar_current_left	{background:url('../images/select_button_left.png');
+											 width:10px;
+											 height:20px;
+											 float:left;}
+#go_to_chosen_day a	{color:white;
+					 text-decoration:none;
+					}
+#go_to_chosen_day a:hover	{color:black;}
+/*przełączanie aktualnie wyświetlanego miesiąca/tygodnia*/
+#current_days	{height:55px;
+				 padding:2px 0px;
+				}
+.switch_date	{padding:0px 10px;}
+#prev_date 	{float:left;
+			 text-align:left;
+			}
+#current_date	{height:29px;
+				 padding:7px 0px;
+				 margin:1px 0px 0px 0px;
+				 color:white;
+				 background:#bdcf00;
+				 text-align:center;
+				 font-weight:bold;
+				 font-size:20px;
+				 width:479px;
+				 float:left;
+				}
+#current_date img	{border:0px;}
+#current_date_left	{background:url('../images/border/orange_left_43.png');
+					 width:9px;
+					 height:43px;
+					 margin:1px 0px 0px 0px;
+					 float:left;
+					}
+#current_date_right	{background:url('../images/border/orange_right_43.png');
+					 width:10px;
+					 height:43px;
+					 margin:1px 0px 0px 0px;
+					 float:right;
+					}
+#next_date	{float:right;
+			 text-align:right;
+			}
+	/*przyciskami przełączania kalendarza tydzień/miesiąc*/
+a#switch_calendar_view	{font-size:12px;
+						 text-decoration:none;
+						 color:white;
+						 display:block;
+						 float:right;
+						}
+a#switch_calendar_view:hover	{color:black;}
+
+/*box z dniami*/
+
+/*komórka*/
+.calendar_cell_week	{margin:2px;
+					 float:left;
+					 padding:5px 3px;
+					 width:109px;
+					}
+.calendar_cell	{margin:2px;
+				 float:left;
+				 padding:5px;
+				 width:70px;
+				}
+.week_cell	{float:right;
+			 text-align:center;
+			 margin:2px 0px;
+			 height:82px;
+			 width:26px;
+			}
+.week_cell a img	{border:0px;}
+
+/*słowna reprezentacja dni*/
+.day_as_string	{color: #bad200;
+				 text-align:center;
+				 font-weight:bold;
+				 padding:2px 6px; 
+				}
+
+/*dni*/
+.week_day	{border:1px #ccc solid;}
+.day	{border:1px #ccc solid;
+		 height:70px;
+                 background:#FFF;
+		}
+.weekend	{border:1px #ffa3b1 solid;
+			 color:red;
+                         background:#FFF;
+			}
+.not_day	{background:#e5e5e5;
+			 border:1px #e5e5e5 solid;
+			}
+#active_day	{padding:3px;
+			 border:3px #bad200 solid;} 
+.day_desc	{text-align:center;
+			 font-weight:bold;
+			 padding:1px;
+			}
+.day_content_week	{}
+.day_content_month	{}
