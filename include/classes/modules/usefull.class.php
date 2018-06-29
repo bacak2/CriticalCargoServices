@@ -518,6 +518,7 @@ class Usefull{
             $Statusy[3] = "krytyczne";
             $Statusy[4] = "wezwania do zapłaty";
             $Statusy[5] = "zgłoszenia trans";
+            $Statusy[6] = "potwierdzona transakcja";
             return $Statusy;
         }
         

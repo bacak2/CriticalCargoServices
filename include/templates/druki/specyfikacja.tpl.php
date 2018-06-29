@@ -6,13 +6,12 @@
 	<thead>
 		<tr>
 			<th>Lp.</th>
-			<th style="width: 130px;">Data załadunku</th>
-			<th style="width: 130px;">Data rozładunku</th>
-                        <th>Osoba zlecająca</th>
-			<th>Załadowca i miejsce załadunku</th>
-			<th>Odbiorca i miejsce rozładunku</th>
-                        <th>Opis ładunku</th>
-			<th>Koszt</th>
+			<th style="width: 130px;">Date of loading</th>
+			<th style="width: 130px;">Date of unloading</th>
+			<th>Place of loading</th>
+			<th colspan="2">Place of unloading</th>
+			<th>Amount</th>
+            <th>Order number</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -24,12 +23,10 @@
 			foreach($Zlecenia as $ZleID => $Zle){
 				echo "<tr>\n";
 					echo "<td>$Licznik</td>\n";
-					echo "<td>{$Zle['termin_zaladunku']} {$Zle['godzina_zaladunku']}</td>\n";
-					echo "<td>{$Zle['termin_rozladunku']} {$Zle['godzina_rozladunku']}</td>\n";
-                                        echo "<td>".nl2br($Zle['nr_zlecenia_klienta'])."</td>\n";
-					echo "<td>".nl2br($Zle['miejsce_zaladunku'])."</td>\n";
-					echo "<td>".nl2br($Zle['odbiorca'])."</td>\n";
-                                        echo "<td>".nl2br($Zle['opis_ladunku'])."</td>\n";
+					echo "<td>{$Zle['termin_zaladunku']}</td>\n";
+					echo "<td>{$Zle['termin_rozladunku']}</td>\n";
+					echo "<td>".nl2br($Zle['adres_zaladunku'])."</td>\n";
+					echo "<td colspan='2'>".nl2br($Zle['adres_rozladunku'])."</td>\n";
 					echo "<td style='vertical-align: bottom;'>";
 						if($Zle['waluta'] == "PLN"){
 							echo $Zle['stawka_klient']."&nbsp;PLN;";
@@ -40,6 +37,7 @@
 							echo number_format($StawkaPLN,2,".","")."&nbsp;PLN;";
 						}
 					echo "</td>\n";
+                    echo "<td>".nl2br($Zle['nr_zlecenia_klienta'])."</td>\n";
 				echo "</tr>\n";
 				$Licznik++;
 				$Sumuj += round($StawkaPLN,2);
@@ -51,17 +49,17 @@
 		</td></tr>
 		<tr>
 			<td colspan="6" style='border: 0;'>&nbsp;</td>
-			<td style='font-weight: bold;'>Kwota netto</td>
+			<td style='font-weight: bold;'>NETTO</td>
 			<td style='font-weight: bold; text-align: right;'><?php echo number_format($Sumuj,2,".","")."&nbsp;zł"; ?></td>
 		</tr>
 		<tr>
 			<td colspan="6" style='border: 0;'>&nbsp;</td>
-			<td style='font-weight: bold;'>Kwota vat</td>
+			<td style='font-weight: bold;'>VAT amount</td>
 			<td style='font-weight: bold; text-align: right;'><?php echo number_format($VAT,2,".","")."&nbsp;zł"; ?></td>
 		</tr>
 		<tr>
 			<td colspan="6" style='border: 0;'>&nbsp;</td>
-			<td style='font-weight: bold;'>Kwota brutto</td>
+			<td style='font-weight: bold;'>BRUTTO</td>
 			<td style='font-weight: bold; text-align: right;'><?php echo number_format($Brutto,2,".","")."&nbsp;zł"; ?></td>
 		</tr>
         </table>

@@ -87,6 +87,7 @@ class Zlecenia extends ModulBazowy {
             $Formularz->DodajPole('waluta', 'lista', null, array('tabelka' => array('tr_end' => 1, 'td_end' => 1), 'elementy' => Usefull::GetWaluty()));
             $Formularz->DodajPole('id_szablon', 'lista', 'Szablon zlecenia', array('tabelka' => Usefull::GetFormStandardRow(), 'elementy' => UsefullBase::GetSzablony($this->Baza)));
             $Formularz->DodajPole('termin_platnosci_dni', 'tekst', 'Termin płatności', array('tabelka' => Usefull::GetFormStandardRow(), 'atrybuty' => array('style' => 'width: 50px;'), 'id' => 'terminek', 'opis_dodatkowy_za' => ' dni'));
+            $Formularz->DodajPole('platnosci_status_klient', 'lista', 'Status - przewoźnik', array('tabelka' => Usefull::GetFormStandardRow(), 'elementy' => Usefull::StatusyPlatnosci()));
 
 //            if(is_array($Wartosci)){
 //                $Values = $Formularz->ZwrocWartosciPol($Wartosci, $Mapuj);
