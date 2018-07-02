@@ -24777,3 +24777,11 @@ Stack trace:
 [29-Jun-2018 13:58:05 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
 [29-Jun-2018 13:58:05 Europe/Berlin] PHP   6. ModulBazowy->AkcjaLista() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:459
 [29-Jun-2018 13:58:05 Europe/Berlin] PHP   7. ModulBazowy->ShowPaginacjaTable() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:659
+[02-Jul-2018 08:12:03 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[02-Jul-2018 08:12:03 Europe/Berlin] PHP Stack trace:
+[02-Jul-2018 08:12:03 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[02-Jul-2018 08:12:03 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[02-Jul-2018 08:16:48 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[02-Jul-2018 08:16:48 Europe/Berlin] PHP Stack trace:
+[02-Jul-2018 08:16:48 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[02-Jul-2018 08:16:48 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3

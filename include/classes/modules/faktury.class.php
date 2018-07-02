@@ -299,7 +299,7 @@ for($i = $Biezaca; $i < $BiezacaEnd; $i++){
 
         function PobierzAkcjeNaLiscie($Dane = array()){
 		$Akcje = array();
-                $Akcje[] = array('img' => "printer_button", 'title' => "Drukuj", "akcja_href" => ($Dane['typek'] == "morska" ? "drukuj_fakture_morska.php?" : ($Dane['typek'] == "lotnicza" ? "drukuj_fakture_lotnicze.php?" : ""))); 
+                $Akcje[] = array('img' => "printer_button", 'title' => "Drukuj", "akcja_link" => ($Dane['typek'] == "morska" ? "drukuj_fakture_morska?id={$Dane[$this->PoleID]}&soid={$Dane['id_zlecenie']}" : ($Dane['typek'] == "lotnicza" ? "drukuj_fakture_lotnicze?id={$Dane[$this->PoleID]}&aoid={$Dane['id_zlecenie']}" : "drukuj_fakture.php?id={$Dane[$this->PoleID]}")));
                 $Akcje[] = array('type' => 'checkbox', 'typek' => $Dane['typek'], 'id' => $Dane[$this->PoleID]);
                 $Akcje[] = array('img' => "edit_button", 'title' => "Edycja", "akcja_link" => ($Dane['typek'] == "morska" ? "?modul=faktury_morskie&akcja=edycja&id={$Dane[$this->PoleID]}&soid={$Dane['id_zlecenie']}" : ($Dane['typek'] == "lotnicza" ? "?modul=faktury_lotnicze&akcja=edycja&id={$Dane[$this->PoleID]}&aoid={$Dane['id_zlecenie']}" : "?modul=faktury&akcja=edycja&id={$Dane[$this->PoleID]}")));
                 $Akcje[] = array('img' => "delete_button", 'title' => "Kasowanie", "akcja_link" => ($Dane['typek'] == "morska" ? "?modul=faktury_morskie&akcja=kasowanie&id={$Dane[$this->PoleID]}" : ($Dane['typek'] == "lotnicza" ? "?modul=faktury_lotnicze&akcja=kasowanie&id={$Dane[$this->PoleID]}" : "?modul=faktury&akcja=kasowanie&id={$Dane[$this->PoleID]}")));
