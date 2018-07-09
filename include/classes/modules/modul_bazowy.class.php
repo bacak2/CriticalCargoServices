@@ -503,6 +503,12 @@ if(!in_array($this->Parametr,$this->ModulyBezWyszukiwarki)){
 			case 'blokowanie':
 				$this->Blokowanie($ID);
 				break;
+			case 'dodaj_specyfikacje':
+				$this->AkcjaDodajSpecyfikacje();
+				break;
+			case 'usun_specyfikacje':
+				$this->AkcjaUsunSpecyfikacje();
+				break;
 			default:
 				$this->AkcjeNiestandardowe($ID);
 				break;
@@ -898,7 +904,7 @@ if(count($this->Sumowanie) > 0){
 		else {
 			$Dane = $this->PobierzDaneElementu($ID);
 			$Formularz = $this->GenerujFormularz($Dane, false);
-                        $this->ShowTitleDiv($ID, $Dane);
+            $this->ShowTitleDiv($ID, $Dane);
 			$Formularz->Wyswietl($Dane, false);
 		}
 	}

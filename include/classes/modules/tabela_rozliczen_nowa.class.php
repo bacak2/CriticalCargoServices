@@ -189,8 +189,7 @@ class TabelaRozliczenNowa extends TabelaRozliczen {
             }
             $this->Sumowanie['id_faktury'] = "<form name='print_invoices' id='print_invoices' target='_blank' action='drukuj_faktury_zbiorczo.php' method='post'><input type='hidden' id='invoice_ids' name='FakturyIDs' value='' /><input type='button' value='drukuj zaznaczone' class='form-button' onclick='PrintInvoices();' /></form>";
             $this->Sumowanie['id_faktury'] .= "<form name='print_invoices_no_bg' id='print_invoices_no_bg' target='_blank' action='drukuj_faktury_zbiorczo.php?bg=no' method='post'><input type='hidden' id='invoice_no_bg_ids' name='FakturyIDs' value='' /><input type='button' value='drukuj bez tła' class='form-button' onclick='PrintInvoicesNoBg();' /></form>";
-            $this->Sumowanie['numer_zlecenia'] = "<form name='orders' id='orders' target='_blank' action='' method='post'><input type='hidden' id='orders_ids' name='OrdersIDs' value='' /><input type='button' value='raport' class='form-button' onclick='RaportOrders();' /><br /><input type='button' value='potwierdzenie' class='form-button' onclick='PotwierdzenieOrders();' /></form>";
-            $this->Sumowanie['numer_zlecenia2'] = "<form name='fakturaZbiorcza' id='orders' target='_blank' action='' method='post'><input type='hidden' id='orders_ids' name='OrdersIDs' value='' /><input type='button' value='raport' class='form-button' onclick='RaportOrders();' /><br /><input type='button' value='faktura zbiorcza' class='form-button' onclick='PotwierdzenieOrders();' /></form>";
+            $this->Sumowanie['numer_zlecenia'] = "<form name='orders' id='orders' target='_blank' action='' method='post'><input type='hidden' id='orders_ids' name='OrdersIDs' value='' /><input type='button' value='raport' class='form-button' onclick='RaportOrders();' /><br /><input type='button' value='potwierdzenie' class='form-button' onclick='PotwierdzenieOrders();' /><br /><input type='button' value='faktura zbiorcza' class='form-button' onclick='FakturaZbiorczaOrders();' /></form>";
             return $Elementy;
         }
 
@@ -501,7 +500,7 @@ class TabelaRozliczenNowa extends TabelaRozliczen {
 
         function ShowBigButtonActions($ID){
             echo "<div style='margin-bottom: 10px; padding: 10px; width: 98%; float: left; border-bottom: 1px solid #bbce00;'>";
-                if(is_null($ID) && $this->WykonywanaAkcja != "specyfikacja"){
+                if(is_null($ID) && $this->WykonywanaAkcja != "specyfikacja" && $this->WykonywanaAkcja != "faktura_zbiorcza"){
                     echo("<div style='float: left;'>");
                         echo "<div style='float: left; color: #bcce00; font-weight: bold;'>RAPORTY:<br /><br /></div>";
                         echo "<div style='clear: both;'></div>\n";

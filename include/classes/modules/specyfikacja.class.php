@@ -47,6 +47,12 @@ class Specyfikacja extends ModulBazowy {
             include(SCIEZKA_SZABLONOW."druki/specyfikacja.tpl.php");
         }
 
+        function AkcjaDrukujZFaktura($ID, $Akcja){
+            $Formularz = $this->GenerujFormularz($_POST);
+            $Wartosci = $Formularz->ZwrocWartosciPol($_POST);
+            include(SCIEZKA_SZABLONOW."druki/specyfikacja.tpl.php");
+        }
+
         function ShowNaglowekDrukuj($Akcja){
             include(SCIEZKA_SZABLONOW."naglowek_drukuj_specyfikacja.tpl.php");
         }

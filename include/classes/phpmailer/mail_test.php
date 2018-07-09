@@ -13,11 +13,11 @@ $mail->SMTPDebug  = 2;                     // enables SMTP debug information (fo
                                            // 1 = errors and messages
                                            // 2 = messages only
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
-$mail->SMTPSecure = "tls";                 // sets the prefix to the servier
-$mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
-$mail->Port       = 587;                   // set the SMTP port for the GMAIL server
-$mail->Username   = "office@critical-cs.com";  // GMAIL username
-$mail->Password   = "$sT{0vU2A1[";            // GMAIL password
+$mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
+$mail->Host       = "srv3.artplus.pl";      // sets GMAIL as the SMTP server
+$mail->Port       = 25;                   // set the SMTP port for the GMAIL server
+$mail->Username   = "krzysztof.baca@artplus.pl";  // GMAIL username
+$mail->Password   = "sRILWEtOM4y1";            // GMAIL password
 
 $mail->SetFrom('office@critical-cs.com', 'First Last');
 

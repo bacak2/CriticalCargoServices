@@ -19,11 +19,29 @@ class MailSMTP {
             $this->Mail->From = "noreply@orderplus.critical-cs.com"; //adres naszego konta
             $this->Mail->FromName = "Critical CS Order System";//nagłówek From
             //$this->Mail->Host = "smtp.googlemail.com";//adres serwera SMTP
+        /*
             $this->Mail->Host = "mail.orderplus.critical-cs.com";//adres serwera SMTP
             $this->Mail->Port = 587;
             $this->Mail->Mailer = "smtp";
             $this->Mail->Username = "noreply@orderplus.critical-cs.com";//nazwa użytkownika
-            $this->Mail->Password = "9DHsdua4";//nasze hasło do konta SMTP 
+            $this->Mail->Password = "9DHsdua4";//nasze hasło do konta SMTP
+        */
+        ///// test na danych artplusa
+        /*$this->Mail->Host = "srv3.artplus.pl";//adres serwera SMTP
+        $this->Mail->Port = 25;
+        $this->Mail->Mailer = "smtp";
+        $this->Mail->Username = "krzysztof.baca@artplus.pl";//nazwa użytkownika
+        $this->Mail->Password = "sRILWEtOM4y1";//nasze hasło do konta SMTP
+        */
+
+            ///// nowe dane
+            $this->Mail->Host = "s16.hekko.pl";//adres serwera SMTP
+            $this->Mail->Port = 465;
+            $this->Mail->Mailer = "smtp";
+            $this->Mail->Username = "noreply@orderplus.critical-cs.com";
+            $this->Mail->Password = "bhrk5E75";
+            $this->Mail->SMTPSecure = "ssl";
+
             $this->Mail->SMTPAuth = true;
             //$this->Mail->SMTPSecure = "tls";
             $this->Mail->SetLanguage("pl", "language/");

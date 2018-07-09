@@ -1,4 +1,18 @@
 <div style="width: 19cm; margin: 1cm auto 1cm auto; text-align: left;">
+    <style>
+        table.ramka td, table.ramka th {
+            border: 1px solid #CCCCCC;
+        }
+        td, th {
+            margin: 0;
+            padding: 5px;
+            vertical-align: top;
+        }
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+    </style>
 	<span style='font-size: 11pt; font-weight: bold;'><?php echo $Wartosci['tytul'] ?></span>
 	<br />
 	<br />
@@ -18,9 +32,11 @@
 		<?php
 			$Wartosci['nowe_zlecenia'][] = 0;
 			$Licznik = 1;
-			$Zlecenia = $this->Baza->GetResultAsArray("SELECT * FROM orderplus_zlecenie WHERE id_zlecenie IN(".implode(",",$Wartosci['nowe_zlecenia']).")", "id_zlecenie");
-			$Sumuj = 0;
-			foreach($Zlecenia as $ZleID => $Zle){
+            if($_POST == null)  $Zlecenia = $this->Baza->GetResultAsArray("SELECT * FROM orderplus_zlecenie WHERE id_faktury = {$_GET['id']}", "id_zlecenie");
+            elseif(isset($_GET['ids'])) $Zlecenia = $this->Baza->GetResultAsArray("SELECT * FROM orderplus_zlecenie WHERE id_faktury = {$_GET['ids']}", "id_zlecenie");
+            else  $Zlecenia = $this->Baza->GetResultAsArray("SELECT * FROM orderplus_zlecenie WHERE id_zlecenie IN(".implode(",",$Wartosci['nowe_zlecenia']).")", "id_zlecenie");
+            $Sumuj = 0;
+        foreach($Zlecenia as $ZleID => $Zle){
 				echo "<tr>\n";
 					echo "<td>$Licznik</td>\n";
 					echo "<td>{$Zle['termin_zaladunku']}</td>\n";
@@ -45,8 +61,7 @@
 			$VAT = $Sumuj * ($Wartosci['stawka_vat']/100);
 			$Brutto = $Sumuj + $VAT;
 		?>
-		<tr><td colspan="8" class='przerwa'>&nbsp;
-		</td></tr>
+		<!--tr><td colspan="8" class='przerwa'></td></tr>
 		<tr>
 			<td colspan="6" style='border: 0;'>&nbsp;</td>
 			<td style='font-weight: bold;'>NETTO</td>
@@ -61,6 +76,6 @@
 			<td colspan="6" style='border: 0;'>&nbsp;</td>
 			<td style='font-weight: bold;'>BRUTTO</td>
 			<td style='font-weight: bold; text-align: right;'><?php echo number_format($Brutto,2,".","")."&nbsp;zł"; ?></td>
-		</tr>
+		</tr-->
         </table>
 </div>

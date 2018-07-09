@@ -24785,3 +24785,237 @@ Stack trace:
 [02-Jul-2018 08:16:48 Europe/Berlin] PHP Stack trace:
 [02-Jul-2018 08:16:48 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
 [02-Jul-2018 08:16:48 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[02-Jul-2018 10:50:19 Europe/Berlin] PHP Parse error:  syntax error, unexpected ',' in /opt/lampp/htdocs/CriticalCS/include/templates/druki/specyfikacja.tpl.php on line 21
+[02-Jul-2018 10:50:19 Europe/Berlin] PHP Stack trace:
+[02-Jul-2018 10:50:19 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/specyfikacja_do_faktury.php:0
+[02-Jul-2018 10:50:19 Europe/Berlin] PHP   2. Panel->WyswietlDrukuj() /opt/lampp/htdocs/CriticalCS/specyfikacja_do_faktury.php:6
+[02-Jul-2018 10:50:19 Europe/Berlin] PHP   3. Specyfikacja->AkcjaDrukuj() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:268
+[02-Jul-2018 13:13:37 Europe/Berlin] PHP Parse error:  syntax error, unexpected ',' in /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_potwierdzenia.class.php on line 47
+[02-Jul-2018 13:13:37 Europe/Berlin] PHP Stack trace:
+[02-Jul-2018 13:13:37 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[02-Jul-2018 13:13:37 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[02-Jul-2018 13:13:37 Europe/Berlin] PHP   3. __autoload() /opt/lampp/htdocs/CriticalCS/index.php:197
+[02-Jul-2018 13:39:14 Europe/Berlin] PHP Fatal error:  Call to undefined method DBMySQL::Get() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php on line 32
+[02-Jul-2018 13:39:14 Europe/Berlin] PHP Stack trace:
+[02-Jul-2018 13:39:14 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[02-Jul-2018 13:39:14 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[02-Jul-2018 13:39:14 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[02-Jul-2018 13:39:14 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:550
+[02-Jul-2018 13:39:14 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[02-Jul-2018 13:39:14 Europe/Berlin] PHP   6. ModulBazowy->AkcjaDodawanie() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:470
+[02-Jul-2018 13:39:14 Europe/Berlin] PHP   7. Faktury->GenerujFormularz() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:787
+[02-Jul-2018 13:45:52 Europe/Berlin] PHP Fatal error:  Call to undefined method Formularz::WyswietlPoleBezEdycji() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php on line 54
+[02-Jul-2018 13:45:52 Europe/Berlin] PHP Stack trace:
+[02-Jul-2018 13:45:52 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[02-Jul-2018 13:45:52 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[02-Jul-2018 13:45:52 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[02-Jul-2018 13:45:52 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:550
+[02-Jul-2018 13:45:52 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[02-Jul-2018 13:45:52 Europe/Berlin] PHP   6. ModulBazowy->AkcjaDodawanie() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:470
+[02-Jul-2018 13:45:52 Europe/Berlin] PHP   7. Faktury->GenerujFormularz() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:787
+[02-Jul-2018 13:46:23 Europe/Berlin] PHP Fatal error:  Cannot pass parameter 1 by reference in /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php on line 54
+[02-Jul-2018 13:46:23 Europe/Berlin] PHP Stack trace:
+[02-Jul-2018 13:46:23 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[02-Jul-2018 13:46:23 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[02-Jul-2018 13:46:23 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[02-Jul-2018 13:46:23 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:550
+[02-Jul-2018 13:46:23 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[02-Jul-2018 13:46:23 Europe/Berlin] PHP   6. ModulBazowy->AkcjaDodawanie() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:470
+[02-Jul-2018 13:46:23 Europe/Berlin] PHP   7. Faktury->GenerujFormularz() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:787
+[02-Jul-2018 13:46:38 Europe/Berlin] PHP Fatal error:  Call to undefined method Formularz::WyswietlPoleBezEdycji() in /opt/lampp/htdocs/CriticalCS/include/classes/forms/formularz.class.php on line 475
+[02-Jul-2018 13:46:38 Europe/Berlin] PHP Stack trace:
+[02-Jul-2018 13:46:38 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[02-Jul-2018 13:46:38 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[02-Jul-2018 13:46:38 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[02-Jul-2018 13:46:38 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:550
+[02-Jul-2018 13:46:38 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[02-Jul-2018 13:46:38 Europe/Berlin] PHP   6. ModulBazowy->AkcjaDodawanie() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:470
+[02-Jul-2018 13:46:38 Europe/Berlin] PHP   7. Faktury->GenerujFormularz() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:787
+[02-Jul-2018 13:46:38 Europe/Berlin] PHP   8. Formularz->WyswietlBezEdycji() /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php:54
+[02-Jul-2018 13:46:56 Europe/Berlin] PHP Fatal error:  Call to undefined method Formularz::WyswietlPoleBezEdycji() in /opt/lampp/htdocs/CriticalCS/include/classes/forms/formularz.class.php on line 475
+[02-Jul-2018 13:46:56 Europe/Berlin] PHP Stack trace:
+[02-Jul-2018 13:46:56 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[02-Jul-2018 13:46:56 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[02-Jul-2018 13:46:56 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[02-Jul-2018 13:46:56 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:550
+[02-Jul-2018 13:46:56 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[02-Jul-2018 13:46:56 Europe/Berlin] PHP   6. ModulBazowy->AkcjaDodawanie() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:470
+[02-Jul-2018 13:46:56 Europe/Berlin] PHP   7. Faktury->GenerujFormularz() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:787
+[02-Jul-2018 13:46:56 Europe/Berlin] PHP   8. Formularz->WyswietlBezEdycji() /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php:54
+[03-Jul-2018 08:41:14 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[03-Jul-2018 08:41:14 Europe/Berlin] PHP Stack trace:
+[03-Jul-2018 08:41:14 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[03-Jul-2018 08:41:14 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[03-Jul-2018 08:41:36 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[03-Jul-2018 08:41:36 Europe/Berlin] PHP Stack trace:
+[03-Jul-2018 08:41:36 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[03-Jul-2018 08:41:36 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[03-Jul-2018 08:42:04 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[03-Jul-2018 08:42:04 Europe/Berlin] PHP Stack trace:
+[03-Jul-2018 08:42:04 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[03-Jul-2018 08:42:04 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[03-Jul-2018 13:18:46 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[03-Jul-2018 13:18:47 Europe/Berlin] PHP Stack trace:
+[03-Jul-2018 13:18:47 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[03-Jul-2018 13:18:47 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[03-Jul-2018 13:18:56 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[03-Jul-2018 13:18:56 Europe/Berlin] PHP Stack trace:
+[03-Jul-2018 13:18:56 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[03-Jul-2018 13:18:56 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[03-Jul-2018 14:16:13 Europe/Berlin] PHP Fatal error:  Using $this when not in object context in /opt/lampp/htdocs/CriticalCS/include/templates/druki/drukuj-fakture-ze-specyfikacja.tpl.php on line 17
+[03-Jul-2018 14:16:13 Europe/Berlin] PHP Stack trace:
+[03-Jul-2018 14:16:13 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/drukuj_fakture.php:0
+[03-Jul-2018 14:16:13 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/drukuj_fakture.php:8
+[03-Jul-2018 14:36:59 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /opt/lampp/htdocs/CriticalCS/include/templates/druki/specyfikacja.tpl.php on line 22
+[03-Jul-2018 14:36:59 Europe/Berlin] PHP Stack trace:
+[03-Jul-2018 14:36:59 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/drukuj_fakture.php:0
+[03-Jul-2018 14:36:59 Europe/Berlin] PHP   2. Panel->WyswietlDrukuj() /opt/lampp/htdocs/CriticalCS/drukuj_fakture.php:8
+[03-Jul-2018 14:36:59 Europe/Berlin] PHP   3. Specyfikacja->AkcjaDrukuj() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:268
+[03-Jul-2018 15:01:29 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php on line 505
+[03-Jul-2018 15:01:29 Europe/Berlin] PHP Stack trace:
+[03-Jul-2018 15:01:29 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[03-Jul-2018 15:01:29 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[03-Jul-2018 15:01:29 Europe/Berlin] PHP   3. __autoload() /opt/lampp/htdocs/CriticalCS/index.php:197
+[03-Jul-2018 15:01:34 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php on line 505
+[03-Jul-2018 15:01:34 Europe/Berlin] PHP Stack trace:
+[03-Jul-2018 15:01:34 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[03-Jul-2018 15:01:34 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[03-Jul-2018 15:01:34 Europe/Berlin] PHP   3. __autoload() /opt/lampp/htdocs/CriticalCS/index.php:197
+[03-Jul-2018 15:09:43 Europe/Berlin] PHP Fatal error:  Call to a member function redirect() on null in /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php on line 504
+[03-Jul-2018 15:09:44 Europe/Berlin] PHP Stack trace:
+[03-Jul-2018 15:09:44 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[03-Jul-2018 15:09:44 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[03-Jul-2018 15:09:44 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[03-Jul-2018 15:09:44 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[03-Jul-2018 15:09:44 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[03-Jul-2018 15:09:44 Europe/Berlin] PHP   6. Faktury->AkcjaDodajSpecyfikacje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:507
+[03-Jul-2018 15:17:14 Europe/Berlin] PHP Fatal error:  Call to undefined function redirect() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php on line 504
+[03-Jul-2018 15:17:14 Europe/Berlin] PHP Stack trace:
+[03-Jul-2018 15:17:14 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[03-Jul-2018 15:17:14 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[03-Jul-2018 15:17:14 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[03-Jul-2018 15:17:14 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[03-Jul-2018 15:17:14 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[03-Jul-2018 15:17:14 Europe/Berlin] PHP   6. Faktury->AkcjaDodajSpecyfikacje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:507
+[04-Jul-2018 08:14:33 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[04-Jul-2018 08:14:34 Europe/Berlin] PHP Stack trace:
+[04-Jul-2018 08:14:34 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[04-Jul-2018 08:14:34 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[04-Jul-2018 08:20:11 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[04-Jul-2018 08:20:11 Europe/Berlin] PHP Stack trace:
+[04-Jul-2018 08:20:11 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[04-Jul-2018 08:20:11 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[04-Jul-2018 08:48:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php on line 571
+[04-Jul-2018 08:48:12 Europe/Berlin] PHP Stack trace:
+[04-Jul-2018 08:48:12 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[04-Jul-2018 08:48:12 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[04-Jul-2018 08:48:12 Europe/Berlin] PHP   3. __autoload() /opt/lampp/htdocs/CriticalCS/index.php:197
+[04-Jul-2018 08:48:17 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php on line 571
+[04-Jul-2018 08:48:17 Europe/Berlin] PHP Stack trace:
+[04-Jul-2018 08:48:17 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[04-Jul-2018 08:48:17 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[04-Jul-2018 08:48:17 Europe/Berlin] PHP   3. __autoload() /opt/lampp/htdocs/CriticalCS/index.php:197
+[04-Jul-2018 08:55:47 Europe/Berlin] WARNING: Nie znaleziono modulu specyfikacja: Plik: 
+[04-Jul-2018 08:55:47 Europe/Berlin] PHP Fatal error:  Call to undefined method specyfikacja::AkcjaDrukuj() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php on line 573
+[04-Jul-2018 08:55:47 Europe/Berlin] PHP Stack trace:
+[04-Jul-2018 08:55:47 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/drukuj_faktury_zbiorczo.php:0
+[04-Jul-2018 08:55:47 Europe/Berlin] PHP   2. Panel->WyswietlDrukuj() /opt/lampp/htdocs/CriticalCS/drukuj_faktury_zbiorczo.php:6
+[04-Jul-2018 08:55:47 Europe/Berlin] PHP   3. Faktury->AkcjaDrukuj() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:268
+[04-Jul-2018 12:17:02 Europe/Berlin] PHP Fatal error:  Call to undefined method Faktury::UstalStawkeVat() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php on line 171
+[04-Jul-2018 12:17:02 Europe/Berlin] PHP Stack trace:
+[04-Jul-2018 12:17:02 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[04-Jul-2018 12:17:02 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[04-Jul-2018 12:17:02 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[04-Jul-2018 12:17:02 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[04-Jul-2018 12:17:02 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[04-Jul-2018 12:17:02 Europe/Berlin] PHP   6. Faktury->AkcjaDodawanie() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:470
+[04-Jul-2018 12:17:02 Europe/Berlin] PHP   7. Faktury->PobierzDaneDoFakturyZbiorczej() /opt/lampp/htdocs/CriticalCS/include/classes/modules/faktury.class.php:135
+[04-Jul-2018 13:18:44 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[04-Jul-2018 13:18:44 Europe/Berlin] PHP Stack trace:
+[04-Jul-2018 13:18:44 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[04-Jul-2018 13:18:44 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[04-Jul-2018 13:20:36 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[04-Jul-2018 13:20:36 Europe/Berlin] PHP Stack trace:
+[04-Jul-2018 13:20:36 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[04-Jul-2018 13:20:36 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[04-Jul-2018 15:49:48 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[04-Jul-2018 15:49:48 Europe/Berlin] PHP Stack trace:
+[04-Jul-2018 15:49:48 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[04-Jul-2018 15:49:48 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[04-Jul-2018 15:50:00 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[04-Jul-2018 15:50:00 Europe/Berlin] PHP Stack trace:
+[04-Jul-2018 15:50:00 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[04-Jul-2018 15:50:00 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[06-Jul-2018 14:41:04 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[06-Jul-2018 14:41:04 Europe/Berlin] PHP Stack trace:
+[06-Jul-2018 14:41:04 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[06-Jul-2018 14:41:04 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[06-Jul-2018 14:41:13 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[06-Jul-2018 14:41:13 Europe/Berlin] PHP Stack trace:
+[06-Jul-2018 14:41:13 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[06-Jul-2018 14:41:13 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[09-Jul-2018 08:15:35 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[09-Jul-2018 08:15:35 Europe/Berlin] PHP Stack trace:
+[09-Jul-2018 08:15:35 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[09-Jul-2018 08:15:35 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[09-Jul-2018 08:16:43 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[09-Jul-2018 08:16:43 Europe/Berlin] PHP Stack trace:
+[09-Jul-2018 08:16:43 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[09-Jul-2018 08:16:43 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[09-Jul-2018 08:16:49 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php on line 596
+[09-Jul-2018 08:16:49 Europe/Berlin] PHP Stack trace:
+[09-Jul-2018 08:16:49 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[09-Jul-2018 08:16:49 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[09-Jul-2018 08:16:49 Europe/Berlin] PHP   3. __autoload() /opt/lampp/htdocs/CriticalCS/index.php:197
+[09-Jul-2018 08:16:49 Europe/Berlin] PHP   4. require_once() /opt/lampp/htdocs/CriticalCS/include/classes.php:73
+[09-Jul-2018 08:16:49 Europe/Berlin] PHP   5. __autoload() /opt/lampp/htdocs/CriticalCS/include/classes.php:11
+[09-Jul-2018 08:18:21 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php on line 804
+[09-Jul-2018 08:18:21 Europe/Berlin] PHP Stack trace:
+[09-Jul-2018 08:18:21 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[09-Jul-2018 08:18:21 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[09-Jul-2018 08:18:21 Europe/Berlin] PHP   3. __autoload() /opt/lampp/htdocs/CriticalCS/index.php:197
+[09-Jul-2018 08:18:21 Europe/Berlin] PHP   4. require_once() /opt/lampp/htdocs/CriticalCS/include/classes.php:73
+[09-Jul-2018 08:18:21 Europe/Berlin] PHP   5. __autoload() /opt/lampp/htdocs/CriticalCS/include/classes.php:11
+[09-Jul-2018 11:36:08 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT), expecting function (T_FUNCTION) in /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php on line 11
+[09-Jul-2018 11:36:08 Europe/Berlin] PHP Stack trace:
+[09-Jul-2018 11:36:08 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[09-Jul-2018 11:36:08 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[09-Jul-2018 11:36:08 Europe/Berlin] PHP   3. __autoload() /opt/lampp/htdocs/CriticalCS/index.php:197
+[09-Jul-2018 11:36:08 Europe/Berlin] PHP   4. require_once() /opt/lampp/htdocs/CriticalCS/include/classes.php:73
+[09-Jul-2018 11:36:08 Europe/Berlin] PHP   5. __autoload() /opt/lampp/htdocs/CriticalCS/include/classes.php:11
+[09-Jul-2018 12:26:25 Europe/Berlin] PHP Fatal error:  Call to a member function Wyswietl() on integer in /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php on line 548
+[09-Jul-2018 12:26:25 Europe/Berlin] PHP Stack trace:
+[09-Jul-2018 12:26:25 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[09-Jul-2018 12:26:25 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[09-Jul-2018 12:26:25 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[09-Jul-2018 12:26:25 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[09-Jul-2018 12:26:25 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[09-Jul-2018 12:26:25 Europe/Berlin] PHP   6. TabelaRozliczen->AkcjeNiestandardowe() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:513
+[09-Jul-2018 12:26:25 Europe/Berlin] PHP   7. TabelaRozliczen->AkcjaFaktura() /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php:246
+[09-Jul-2018 12:26:30 Europe/Berlin] PHP Fatal error:  Call to a member function Wyswietl() on integer in /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php on line 588
+[09-Jul-2018 12:26:30 Europe/Berlin] PHP Stack trace:
+[09-Jul-2018 12:26:30 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[09-Jul-2018 12:26:30 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[09-Jul-2018 12:26:30 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[09-Jul-2018 12:26:30 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[09-Jul-2018 12:26:30 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[09-Jul-2018 12:26:30 Europe/Berlin] PHP   6. TabelaRozliczen->AkcjeNiestandardowe() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:513
+[09-Jul-2018 12:26:30 Europe/Berlin] PHP   7. TabelaRozliczen->AkcjaFakturaZbiorcza() /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php:249
+[09-Jul-2018 12:50:54 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php on line 883
+[09-Jul-2018 12:50:54 Europe/Berlin] PHP Stack trace:
+[09-Jul-2018 12:50:54 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[09-Jul-2018 12:50:54 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[09-Jul-2018 12:50:54 Europe/Berlin] PHP   3. __autoload() /opt/lampp/htdocs/CriticalCS/index.php:197
+[09-Jul-2018 12:50:54 Europe/Berlin] PHP   4. require_once() /opt/lampp/htdocs/CriticalCS/include/classes.php:73
+[09-Jul-2018 12:50:54 Europe/Berlin] PHP   5. __autoload() /opt/lampp/htdocs/CriticalCS/include/classes.php:11
+[09-Jul-2018 14:09:33 Europe/Berlin] WARNING: Nie znaleziono modulu Formularz: Plik: include/classes/forms/formularz.class.php
+[09-Jul-2018 14:09:33 Europe/Berlin] PHP Fatal error:  Call to undefined method Formularz::DodajPole() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php on line 89
+[09-Jul-2018 14:09:33 Europe/Berlin] PHP Stack trace:
+[09-Jul-2018 14:09:33 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[09-Jul-2018 14:09:33 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[09-Jul-2018 14:09:33 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[09-Jul-2018 14:09:33 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[09-Jul-2018 14:09:33 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[09-Jul-2018 14:09:33 Europe/Berlin] PHP   6. TabelaRozliczen->AkcjeNiestandardowe() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:513
+[09-Jul-2018 14:09:33 Europe/Berlin] PHP   7. TabelaRozliczen->AkcjaFakturaZbiorcza() /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php:249
+[09-Jul-2018 14:09:33 Europe/Berlin] PHP   8. TabelaRozliczen->GenerujFormularzFaktura() /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php:586

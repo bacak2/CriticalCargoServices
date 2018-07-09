@@ -69,6 +69,13 @@ function PotwierdzenieOrders(){
     document.orders.submit();
 }
 
+function FakturaZbiorczaOrders(){
+    GetOrdersNumbers();
+    //document.orders.action = "?modul=faktury&akcja=dodawanie";
+    document.orders.action = "?modul=tabela_rozliczen_nowa&akcja=faktura_zbiorcza";
+    document.orders.submit();
+}
+
 function GetOrdersNumbers(){
     var orders_numbers = "";
     $(".CheckOrders").each(function(){

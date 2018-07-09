@@ -1,5 +1,5 @@
 <?php
-    if(count($this->Filtry)){
+    if(count($this->Filtry) && $_GET['akcja'] != 'faktura_zbiorcza'){
         ?>
         <div style="clear: both;"></div>
         <?php
