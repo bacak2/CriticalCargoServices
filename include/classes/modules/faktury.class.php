@@ -458,7 +458,45 @@ class Faktury extends ModulBazowy {
 
     function AkcjaDrukuj($ID, $Akcja){
         if($this->SprawdzUprawnienie("faktury")){
-            if($Akcja == "wydruk" || $Akcja == "wydruk-new"){
+            if(isset($_GET['spec']) && ($Akcja == "wydruk" || $Akcja == "wydruk-new")){
+                $Zap = "SELECT fw.waluta, fw.kurs, fp.forma, fp.forma_en, p.*, f.* FROM faktury f
+                                                        LEFT JOIN faktury_pozycje p ON f.id_faktury = p.id_faktury
+                                                        LEFT JOIN faktury_formy_platnosci fp ON f.id_formy = fp.id_formy
+                                                        LEFT JOIN faktury_waluty fw ON f.id_waluty = fw.id_waluty
+                                                        WHERE f.id_faktury = '$ID'".($ID > 17162 || $ID == 17153 ? " ORDER BY p.id_pozycji ASC" : "");
+                $faktura = $this->Baza->GetData($Zap);
+
+                if($faktura['szablon_faktura'] == 'ENG'){
+                    include(SCIEZKA_INCLUDE."faktura_lang/eng.php");
+                }else{
+                    include(SCIEZKA_INCLUDE."faktura_lang/pl.php");
+                }
+                # zmiana szablonu faktury od 26.09.2012 #
+                if($faktura['data_wystawienia'] >= '2012-09-26' || $Akcja == "wydruk-new"){
+                    $all_pozycje_baza = $this->Baza->GetRows($Zap);
+                    $pogrupowane_pozycje = array();
+                    $idx = 0;
+                    $k = 1;
+                    foreach($all_pozycje_baza as $pozycje_z_bazy){
+                        $pogrupowane_pozycje[$idx][] = $pozycje_z_bazy;
+                        if($k % 9 == 0){
+                            $idx++;
+                        }
+                        $k++;
+                    }
+                    $dane_konta = $this->getAccount($faktura);
+                    foreach($pogrupowane_pozycje as $key => $Pozycje){
+                        $next = $key+1;
+                        $lp = 1 + ($key * 9);
+                        $koniec_faktury = (isset($pogrupowane_pozycje[$next]) && count($pogrupowane_pozycje[$next]) > 0 ? false : true);
+                        /*include(SCIEZKA_SZABLONOW."druki/drukuj-fakture-new-design.tpl.php");*/
+                        include(SCIEZKA_SZABLONOW."druki/drukuj-fakture.tpl.php");
+                    }
+                }else{
+                    include(SCIEZKA_SZABLONOW."druki/drukuj-fakture.tpl.php");
+                }
+            }
+            else if($Akcja == "wydruk" || $Akcja == "wydruk-new"){
                 $Zap = "SELECT fw.waluta, fw.kurs, fp.forma, fp.forma_en, p.*, f.* FROM faktury f
                                                         LEFT JOIN faktury_pozycje p ON f.id_faktury = p.id_faktury
                                                         LEFT JOIN faktury_formy_platnosci fp ON f.id_formy = fp.id_formy

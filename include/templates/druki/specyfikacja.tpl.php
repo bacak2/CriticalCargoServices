@@ -16,6 +16,12 @@
 	<span style='font-size: 11pt; font-weight: bold;'><?php echo $Wartosci['tytul'] ?></span>
 	<br />
 	<br />
+    <?php if(isset($_GET['spec'])){ ?>
+        <table style='font-size: 14pt; font-weight: bold; text-align: center;'>
+            <tr><td>Specification</td></tr>
+        </table>
+        <br />
+    <?php }?>
 	<table class="ramka">
 	<thead>
 		<tr>
@@ -43,24 +49,52 @@
 					echo "<td>{$Zle['termin_rozladunku']}</td>\n";
 					echo "<td>".nl2br($Zle['adres_zaladunku'])."</td>\n";
 					echo "<td colspan='2'>".nl2br($Zle['adres_rozladunku'])."</td>\n";
-					echo "<td style='vertical-align: bottom;'>";
-						if($Zle['waluta'] == "PLN"){
-							echo $Zle['stawka_klient']."&nbsp;PLN;";
-							$StawkaPLN = $Zle['stawka_klient'];
-						}else{
-							echo $Zle['stawka_klient']."&nbsp;{$Zle['waluta']};<br />";
-							$StawkaPLN = $Zle['stawka_klient']*$Zle['kurs'];
-							echo number_format($StawkaPLN,2,".","")."&nbsp;PLN;";
-						}
+
+					if(isset($_GET['spec'])){
+                        echo "<td>";
+                        $fakturaCurrency = $this->Baza->GetData("SELECT waluta FROM faktury 
+                        LEFT JOIN faktury_waluty ON faktury.id_waluty = faktury_waluty.id_waluty
+                        WHERE id_faktury = {$_GET['id']}");
+                        if ($fakturaCurrency['waluta'] == "PLN") {
+                            echo $Zle['stawka_klient'] . "&nbsp;PLN";
+                            $StawkaPLN = $Zle['stawka_klient'];
+                        } else {
+                            echo $Zle['stawka_klient'] . "&nbsp;{$Zle['waluta']}";
+                            $StawkaEUR = $Zle['stawka_klient'];
+                        }
+                    }
+                    else {
+                        echo "<td style='vertical-align: bottom;'>";
+                        if ($Zle['waluta'] == "PLN") {
+                            echo $Zle['stawka_klient'] . "&nbsp;PLN;";
+                            $StawkaPLN = $Zle['stawka_klient'];
+                        } else {
+                            $StawkaEUR = $Zle['stawka_klient'];
+                            echo $Zle['stawka_klient'] . "&nbsp;{$Zle['waluta']};<br />";
+                            $StawkaPLN = $Zle['stawka_klient'] * $Zle['kurs'];
+                            echo number_format($StawkaPLN, 2, ".", "") . "&nbsp;PLN;";
+                        }
+                    }
 					echo "</td>\n";
                     echo "<td>".nl2br($Zle['nr_zlecenia_klienta'])."</td>\n";
 				echo "</tr>\n";
 				$Licznik++;
 				$Sumuj += round($StawkaPLN,2);
+				$SumujEUR += round($StawkaEUR,2);
 			}
 			$VAT = $Sumuj * ($Wartosci['stawka_vat']/100);
 			$Brutto = $Sumuj + $VAT;
 		?>
+        <tr>
+            <td colspan="5" style="border: none;"></td>
+            <td style="border: none;">Total:</td>
+            <td style="border: none;">
+                <?php
+                    if($fakturaCurrency['waluta'] == "PLN") echo number_format($Sumuj,2,".","")."&nbsp;PLN";
+                    else echo number_format($SumujEUR,2,".","")."&nbsp;EUR";
+                ?>
+            </td>
+        </tr>
 		<!--tr><td colspan="8" class='przerwa'></td></tr>
 		<tr>
 			<td colspan="6" style='border: 0;'>&nbsp;</td>

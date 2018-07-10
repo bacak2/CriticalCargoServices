@@ -216,33 +216,54 @@ echo "
 
 $Pozycje = $this->Baza->GetRows($Zap);
 $lp = 1;
-foreach($Pozycje as $Pos)
-{
-   echo "
+if(isset($_GET['spec'])){
+    $speyfikacjaAmount = $this->Baza->GetData("SELECT *,
+       SUM(netto) as suma_netto,
+       SUM(kwota_vat) as suma_kwot_vat
+       FROM faktury_pozycje WHERE id_faktury = $ID GROUP BY vat DESC");
+
+    echo "
    <tr>
    <td align=\"center\" style=\"height: 20px;\">$lp</td>
    <td align=\"center\">";
-   if($faktura['szablon_faktura'] == 'ENG')
-   {
-      echo str_replace('Wewnątrzwspólnotowa usługa spedycyjna', 'Intraeuropean Forwarding Service', $Pos['opis']);
-   }
-   else
-   {
-      echo $Pos['opis'];
-   }
-   echo "</td>
+    if ($faktura['szablon_faktura'] == 'ENG') {
+        echo str_replace('Wewnątrzwspólnotowa usługa spedycyjna', 'Intraeuropean Forwarding Service', $Pozycje[0]['opis']);
+    } else {
+        echo $Pozycje[0]['opis'];
+    }
+    echo "</td>
+   <td align=\"center\">{$Pozycje[0]['pkwiu']}</td>
+   <td align=\"center\">{$Pozycje[0]['ilosc']}</td>
+   <td align=\"center\">" . ($faktura['szablon_faktura'] == 'ENG' ? str_replace("szt", "pcs", $Pozycje[0]['jednostka']) : $Pozycje[0]['jednostka']) . "</td>
+   <td align=\"center\">" . Usefull::ZmienFormatKwoty($speyfikacjaAmount['suma_netto']) . " <small>{$faktura['waluta']}</small></td>
+   <td align=\"center\">" . Usefull::ZmienFormatKwoty($speyfikacjaAmount['suma_netto']) . "  <small>{$faktura['waluta']}</small></td>
+   <td align=\"center\">{$Pozycje[0]['vat']}" . (!in_array(strtolower($Pozycje[0]['vat']), array("np", "zw")) ? "%" : "") . "</td>
+   </tr>";
+}
+else {
+    foreach ($Pozycje as $Pos) {
+        echo "
+   <tr>
+   <td align=\"center\" style=\"height: 20px;\">$lp</td>
+   <td align=\"center\">";
+        if ($faktura['szablon_faktura'] == 'ENG') {
+            echo str_replace('Wewnątrzwspólnotowa usługa spedycyjna', 'Intraeuropean Forwarding Service', $Pos['opis']);
+        } else {
+            echo $Pos['opis'];
+        }
+        echo "</td>
    <td align=\"center\">{$Pos['pkwiu']}</td>
    <td align=\"center\">{$Pos['ilosc']}</td>
-   <td align=\"center\">".($faktura['szablon_faktura'] == 'ENG' ? str_replace("szt", "pcs", $Pos['jednostka']) : $Pos['jednostka'])."</td>
-   <td align=\"center\">". Usefull::ZmienFormatKwoty($Pos['netto_jednostki']) ." <small>{$faktura['waluta']}</small></td>
-   <td align=\"center\">".  Usefull::ZmienFormatKwoty($Pos['netto']) ."  <small>{$faktura['waluta']}</small></td>
-   <td align=\"center\">{$Pos['vat']}".(!in_array(strtolower($Pos['vat']), array("np", "zw")) ? "%" : "")."</td>
+   <td align=\"center\">" . ($faktura['szablon_faktura'] == 'ENG' ? str_replace("szt", "pcs", $Pos['jednostka']) : $Pos['jednostka']) . "</td>
+   <td align=\"center\">" . Usefull::ZmienFormatKwoty($Pos['netto_jednostki']) . " <small>{$faktura['waluta']}</small></td>
+   <td align=\"center\">" . Usefull::ZmienFormatKwoty($Pos['netto']) . "  <small>{$faktura['waluta']}</small></td>
+   <td align=\"center\">{$Pos['vat']}" . (!in_array(strtolower($Pos['vat']), array("np", "zw")) ? "%" : "") . "</td>
    </tr>";
-   $lp++;
+        $lp++;
+    }
 }
+
 echo "</table>";
-
-
 
 echo "
 <table style=\"margin: 30px 0 20px 0\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\">
@@ -279,6 +300,7 @@ while($pozycje = mysql_fetch_object($w1))
    <td align=\"center\">".  Usefull::ZmienFormatKwoty($pozycje->suma_brutto) ." <small>{$faktura['waluta']}</small></td>
    </tr>";
 }
+
 
 
 echo "<tr>

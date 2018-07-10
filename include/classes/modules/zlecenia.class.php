@@ -329,7 +329,6 @@ class Zlecenia extends ModulBazowy {
 
                             $tresc_maila .= "</body></html>\r\n";
 
-                            //$adres_email = "order@meppeurope.com";
                             $adres_email = "office@critical-cs.com";
                             $mail = new MailSMTP();
                             if ($mail->SendEmail("$adres_email", "Potwierdzenie odczytu zlecenia: {$zlecenie['numer_zlecenia']}", "$tresc_maila")){

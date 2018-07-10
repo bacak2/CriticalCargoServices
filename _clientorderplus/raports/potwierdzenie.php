@@ -4,7 +4,7 @@ error_reporting(0);
 require_once('../baza.php');
 require_once('../functions.php');
 $hash = $_GET['check'];
-
+exit();
 $Potwierdzenie = GetRow("SELECT * FROM orderplus_klient_potwierdzenie WHERE hash = '$hash' AND klient_id = '{$_SESSION['zalogowany_id']}'");
 
 if($Potwierdzenie){

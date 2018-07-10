@@ -608,7 +608,7 @@ class TabelaRozliczen extends ModulBazowy {
 
     function PobierzDaneElementuFakturaZbiorcza($ordersIDs){
         $Dane = $this->Baza->GetData("SELECT * FROM $this->Tabela WHERE $this->PoleID IN ({$ordersIDs})");
-        $ClientDane = $this->Baza->GetData("SELECT * FROM orderplus_klient WHERE id_klient = '{$ordersIDs}'");
+        $ClientDane = $this->Baza->GetData("SELECT * FROM orderplus_klient WHERE id_klient = '{$Dane['id_klient']}'");
         $this->ZleceniaDoFaktury = $this->Baza->GetOptions("SELECT z.id_zlecenie, z.numer_zlecenia FROM orderplus_zlecenie z WHERE ((z.ost_korekta = 1) OR (z.ost_korekta = 0 AND z.korekta = 0)) AND z.id_klient='{$Dane['id_klient']}' AND id_faktury = '0' AND waluta = '{$Dane['waluta']}'");
         $Faktura['data_wystawienia'] = $this->Dzis;
         $Faktura['miejsce_wystawienia'] = "Warszawa";
