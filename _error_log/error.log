@@ -25019,3 +25019,107 @@ Stack trace:
 [09-Jul-2018 14:09:33 Europe/Berlin] PHP   6. TabelaRozliczen->AkcjeNiestandardowe() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:513
 [09-Jul-2018 14:09:33 Europe/Berlin] PHP   7. TabelaRozliczen->AkcjaFakturaZbiorcza() /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php:249
 [09-Jul-2018 14:09:33 Europe/Berlin] PHP   8. TabelaRozliczen->GenerujFormularzFaktura() /opt/lampp/htdocs/CriticalCS/include/classes/modules/tabela_rozliczen.class.php:586
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /opt/lampp/htdocs/CriticalCS/include/classes/mysql.class.php on line 58
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP   2. Panel->__construct() /opt/lampp/htdocs/CriticalCS/index.php:5
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP   3. DBMySQL->__construct() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:23
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP   4. DBMySQL->Connect() /opt/lampp/htdocs/CriticalCS/include/classes/mysql.class.php:53
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP   5. mysql_connect() /opt/lampp/htdocs/CriticalCS/include/classes/mysql.class.php:58
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP Deprecated:  Function mysql_selectdb() is deprecated in /opt/lampp/htdocs/CriticalCS/include/classes/mysql.class.php on line 59
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP   2. Panel->__construct() /opt/lampp/htdocs/CriticalCS/index.php:5
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP   3. DBMySQL->__construct() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:23
+[10-Jul-2018 09:30:15 Europe/Berlin] PHP   4. DBMySQL->Connect() /opt/lampp/htdocs/CriticalCS/include/classes/mysql.class.php:53
+[10-Jul-2018 09:30:47 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[10-Jul-2018 09:30:47 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 09:30:47 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 09:30:47 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[10-Jul-2018 10:10:14 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[10-Jul-2018 10:10:14 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 10:10:14 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 10:10:14 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[10-Jul-2018 10:11:46 Europe/Berlin] PHP Notice:  Undefined index: login in /opt/lampp/htdocs/CriticalCS/configure.php on line 6
+[10-Jul-2018 10:11:46 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 10:11:46 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 10:11:46 Europe/Berlin] PHP   2. include() /opt/lampp/htdocs/CriticalCS/index.php:3
+[10-Jul-2018 10:14:15 Europe/Berlin] WARNING: Nie znaleziono modulu PHPMailer: Plik: 
+[10-Jul-2018 10:14:15 Europe/Berlin] PHP Fatal error:  Call to undefined method PHPMailer::IsSMTP() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/mail-smtp.class.php on line 18
+[10-Jul-2018 10:14:15 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 10:14:15 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 10:14:15 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[10-Jul-2018 10:14:15 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[10-Jul-2018 10:14:15 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[10-Jul-2018 10:14:15 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[10-Jul-2018 10:14:15 Europe/Berlin] PHP   6. KlienciRaporty->AkcjeNiestandardowe() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:513
+[10-Jul-2018 10:14:15 Europe/Berlin] PHP   7. KlienciRaporty->AkcjaWyslij() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:286
+[10-Jul-2018 10:14:15 Europe/Berlin] PHP   8. KlienciRaporty->WyslijRaport() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:302
+[10-Jul-2018 10:14:15 Europe/Berlin] PHP   9. MailSMTP->__construct() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:339
+[10-Jul-2018 10:14:58 Europe/Berlin] WARNING: Nie znaleziono modulu PHPMailer: Plik: 
+[10-Jul-2018 10:14:58 Europe/Berlin] PHP Fatal error:  Call to undefined method PHPMailer::isSMTP() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/mail-smtp.class.php on line 18
+[10-Jul-2018 10:14:58 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 10:14:58 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 10:14:58 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[10-Jul-2018 10:14:58 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[10-Jul-2018 10:14:58 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[10-Jul-2018 10:14:58 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[10-Jul-2018 10:14:58 Europe/Berlin] PHP   6. KlienciRaporty->AkcjeNiestandardowe() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:513
+[10-Jul-2018 10:14:58 Europe/Berlin] PHP   7. KlienciRaporty->AkcjaWyslij() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:286
+[10-Jul-2018 10:14:58 Europe/Berlin] PHP   8. KlienciRaporty->WyslijRaport() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:302
+[10-Jul-2018 10:14:58 Europe/Berlin] PHP   9. MailSMTP->__construct() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:339
+[10-Jul-2018 10:21:40 Europe/Berlin] PHP Fatal error:  Call to undefined method PHPMailer\PHPMailer\PHPMailer::GetError() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/mail-smtp.class.php on line 64
+[10-Jul-2018 10:21:40 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 10:21:40 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 10:21:40 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[10-Jul-2018 10:21:40 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[10-Jul-2018 10:21:40 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[10-Jul-2018 10:21:40 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[10-Jul-2018 10:21:40 Europe/Berlin] PHP   6. KlienciRaporty->AkcjeNiestandardowe() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:513
+[10-Jul-2018 10:21:40 Europe/Berlin] PHP   7. KlienciRaporty->AkcjaWyslij() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:286
+[10-Jul-2018 10:21:40 Europe/Berlin] PHP   8. KlienciRaporty->WyslijRaport() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:302
+[10-Jul-2018 10:21:40 Europe/Berlin] PHP   9. MailSMTP->SendEmail() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:352
+[10-Jul-2018 10:26:32 Europe/Berlin] PHP Fatal error:  Call to undefined method PHPMailer\PHPMailer\PHPMailer::getError() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/mail-smtp.class.php on line 84
+[10-Jul-2018 10:26:32 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 10:26:32 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 10:26:32 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[10-Jul-2018 10:26:32 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[10-Jul-2018 10:26:32 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[10-Jul-2018 10:26:32 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[10-Jul-2018 10:26:32 Europe/Berlin] PHP   6. KlienciRaporty->AkcjeNiestandardowe() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:513
+[10-Jul-2018 10:26:32 Europe/Berlin] PHP   7. KlienciRaporty->AkcjaWyslij() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:286
+[10-Jul-2018 10:26:32 Europe/Berlin] PHP   8. KlienciRaporty->WyslijRaport() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:302
+[10-Jul-2018 10:26:32 Europe/Berlin] PHP   9. MailSMTP->SendEmail() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:352
+[10-Jul-2018 10:27:06 Europe/Berlin] PHP Fatal error:  Call to a member function getError() on null in /opt/lampp/htdocs/CriticalCS/include/classes/modules/mail-smtp.class.php on line 84
+[10-Jul-2018 10:27:06 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 10:27:06 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 10:27:06 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[10-Jul-2018 10:27:06 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[10-Jul-2018 10:27:06 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[10-Jul-2018 10:27:06 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[10-Jul-2018 10:27:06 Europe/Berlin] PHP   6. KlienciRaporty->AkcjeNiestandardowe() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:513
+[10-Jul-2018 10:27:06 Europe/Berlin] PHP   7. KlienciRaporty->AkcjaWyslij() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:286
+[10-Jul-2018 10:27:06 Europe/Berlin] PHP   8. KlienciRaporty->WyslijRaport() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:302
+[10-Jul-2018 10:27:06 Europe/Berlin] PHP   9. MailSMTP->SendEmail() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:352
+[10-Jul-2018 10:28:13 Europe/Berlin] PHP Fatal error:  Call to undefined method PHPMailer\PHPMailer\PHPMailer::getError() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/mail-smtp.class.php on line 85
+[10-Jul-2018 10:28:13 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 10:28:13 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 10:28:13 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[10-Jul-2018 10:28:13 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[10-Jul-2018 10:28:13 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[10-Jul-2018 10:28:13 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[10-Jul-2018 10:28:13 Europe/Berlin] PHP   6. KlienciRaporty->AkcjeNiestandardowe() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:513
+[10-Jul-2018 10:28:13 Europe/Berlin] PHP   7. KlienciRaporty->AkcjaWyslij() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:286
+[10-Jul-2018 10:28:13 Europe/Berlin] PHP   8. KlienciRaporty->WyslijRaport() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:302
+[10-Jul-2018 10:28:13 Europe/Berlin] PHP   9. MailSMTP->SendEmail() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:352
+[10-Jul-2018 10:34:38 Europe/Berlin] PHP Fatal error:  Call to undefined method PHPMailer\PHPMailer\PHPMailer::GetErrors() in /opt/lampp/htdocs/CriticalCS/include/classes/modules/mail-smtp.class.php on line 84
+[10-Jul-2018 10:34:38 Europe/Berlin] PHP Stack trace:
+[10-Jul-2018 10:34:38 Europe/Berlin] PHP   1. {main}() /opt/lampp/htdocs/CriticalCS/index.php:0
+[10-Jul-2018 10:34:38 Europe/Berlin] PHP   2. Panel->Wyswietl() /opt/lampp/htdocs/CriticalCS/index.php:7
+[10-Jul-2018 10:34:38 Europe/Berlin] PHP   3. ModulBazowy->Wyswietl() /opt/lampp/htdocs/CriticalCS/include/classes/panel.class.php:202
+[10-Jul-2018 10:34:38 Europe/Berlin] PHP   4. ModulBazowy->WyswietlAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:556
+[10-Jul-2018 10:34:38 Europe/Berlin] PHP   5. ModulBazowy->WykonywaneAkcje() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:443
+[10-Jul-2018 10:34:38 Europe/Berlin] PHP   6. KlienciRaporty->AkcjeNiestandardowe() /opt/lampp/htdocs/CriticalCS/include/classes/modules/modul_bazowy.class.php:513
+[10-Jul-2018 10:34:38 Europe/Berlin] PHP   7. KlienciRaporty->AkcjaWyslij() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:286
+[10-Jul-2018 10:34:38 Europe/Berlin] PHP   8. KlienciRaporty->WyslijRaport() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:302
+[10-Jul-2018 10:34:38 Europe/Berlin] PHP   9. MailSMTP->SendEmail() /opt/lampp/htdocs/CriticalCS/include/classes/modules/klienci_raporty.class.php:352

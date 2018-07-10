@@ -1,4 +1,10 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/phpmailer/phpmailer/src/Exception.php';
+require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require 'vendor/phpmailer/phpmailer//src/SMTP.php';
 /**
  * Moduł wysyłki emaili przez SMTP
  * 
@@ -8,31 +14,24 @@
  */
 class MailSMTP {
 	public $Mail;
-        public $Errors = false;
+    public $Errors = false;
 	
 	function __construct() {
-            include(SCIEZKA_KLAS."phpmailer/class.phpmailer.php");
+            ///include("vendor/phpmailer/phpmailer/src/PHPMailer.php");
             $this->Mail = new PHPMailer();
             $this->Mail->MailerDebug = 4;
             //$this->PluginDir = "";
-            $this->Mail->IsSMTP();
+            $this->Mail->isSMTP();
             $this->Mail->From = "noreply@orderplus.critical-cs.com"; //adres naszego konta
             $this->Mail->FromName = "Critical CS Order System";//nagłówek From
             //$this->Mail->Host = "smtp.googlemail.com";//adres serwera SMTP
-        /*
-            $this->Mail->Host = "mail.orderplus.critical-cs.com";//adres serwera SMTP
+
+            /*$this->Mail->Host = "mail.orderplus.critical-cs.com";//adres serwera SMTP
             $this->Mail->Port = 587;
             $this->Mail->Mailer = "smtp";
             $this->Mail->Username = "noreply@orderplus.critical-cs.com";//nazwa użytkownika
             $this->Mail->Password = "9DHsdua4";//nasze hasło do konta SMTP
-        */
-        ///// test na danych artplusa
-        /*$this->Mail->Host = "srv3.artplus.pl";//adres serwera SMTP
-        $this->Mail->Port = 25;
-        $this->Mail->Mailer = "smtp";
-        $this->Mail->Username = "krzysztof.baca@artplus.pl";//nazwa użytkownika
-        $this->Mail->Password = "sRILWEtOM4y1";//nasze hasło do konta SMTP
-        */
+            */
 
             ///// nowe dane
             $this->Mail->Host = "s16.hekko.pl";//adres serwera SMTP
@@ -71,9 +70,6 @@ class MailSMTP {
                 $this->Mail->ClearAddresses();
                 return true;
             }
-            $this->Errors = $this->Mail->GetError();
-            var_dump($this->Errors);
-            $this->Mail->ClearAddresses();
             return false;
         }
 
