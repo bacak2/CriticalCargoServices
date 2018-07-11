@@ -551,10 +551,12 @@ class Faktury extends ModulBazowy {
                         $faktura = $this->Baza->GetData($Zap);
                         if(($faktura['specyfikacja_id']) != 0){
                             $_GET['ids'] = $faktura['id_faktury'];
+                            $_GET['id'] = $faktura['id_faktury'];
+                            $_GET['spec'] = 1;
                             $spec = new Specyfikacja($this->Baza, $this->Uzytkownik, $this->Parametr, $this->Sciezka);
-                            $spec->AkcjaDrukuj(1, "wydruk");
+                            $spec->AkcjaDrukuj($faktura['id_faktury'], "wydruk");
                         }else{
-                            $_GET['ids'] = 0;
+                            $_GET['id'] = 0;
                         }
                     }
                 }

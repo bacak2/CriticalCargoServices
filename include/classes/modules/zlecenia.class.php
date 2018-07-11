@@ -331,6 +331,7 @@ class Zlecenia extends ModulBazowy {
 
                             $adres_email = "office@critical-cs.com";
                             $mail = new MailSMTP();
+
                             if ($mail->SendEmail("$adres_email", "Potwierdzenie odczytu zlecenia: {$zlecenie['numer_zlecenia']}", "$tresc_maila")){
                                 mysql_query("UPDATE orderplus_zlecenie SET data_podgladu = now() WHERE id_zlecenie = '{$zlecenie['id_zlecenie']}'");
                             }

@@ -227,7 +227,8 @@ if(isset($_GET['spec'])){
    <td align=\"center\" style=\"height: 20px;\">$lp</td>
    <td align=\"center\">";
     if ($faktura['szablon_faktura'] == 'ENG') {
-        echo str_replace('Wewnątrzwspólnotowa usługa spedycyjna', 'Intraeuropean Forwarding Service', $Pozycje[0]['opis']);
+        if($Pozycje[0]['opis'] == "Transport międzynarodowy")   echo str_replace('Transport międzynarodowy', 'International Transport', $Pozycje[0]['opis']);
+        else echo str_replace('Wewnątrzwspólnotowa usługa spedycyjna', 'Intraeuropean Forwarding Service', $Pozycje[0]['opis']);
     } else {
         echo $Pozycje[0]['opis'];
     }
@@ -247,7 +248,8 @@ else {
    <td align=\"center\" style=\"height: 20px;\">$lp</td>
    <td align=\"center\">";
         if ($faktura['szablon_faktura'] == 'ENG') {
-            echo str_replace('Wewnątrzwspólnotowa usługa spedycyjna', 'Intraeuropean Forwarding Service', $Pos['opis']);
+            if($Pozycje[0]['opis'] == "Transport międzynarodowy")   echo str_replace('Transport międzynarodowy', 'International Transport', $Pos['opis']);
+            else echo str_replace('Wewnątrzwspólnotowa usługa spedycyjna', 'Intraeuropean Forwarding Service', $Pos['opis']);
         } else {
             echo $Pos['opis'];
         }

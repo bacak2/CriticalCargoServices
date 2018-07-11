@@ -30,7 +30,13 @@
 			<th style="width: 130px;">Date of unloading</th>
 			<th>Place of loading</th>
 			<th colspan="2">Place of unloading</th>
-			<th>Amount</th>
+            <?php if(isset($_GET['spec'])){
+                $fakturaCurrency = $this->Baza->GetData("SELECT waluta FROM faktury LEFT JOIN faktury_waluty ON faktury.id_waluty = faktury_waluty.id_waluty WHERE id_faktury = {$_GET['id']}");
+                if ($fakturaCurrency['waluta'] == "PLN") echo '<th>Amount in PLN</th>';
+                else echo '<th>Amount in EUR</th>';
+                }
+                else echo '<th>Amount</th>';
+            ?>
             <th>Order number</th>
 		</tr>
 	</thead>
@@ -42,6 +48,8 @@
             elseif(isset($_GET['ids'])) $Zlecenia = $this->Baza->GetResultAsArray("SELECT * FROM orderplus_zlecenie WHERE id_faktury = {$_GET['ids']}", "id_zlecenie");
             else  $Zlecenia = $this->Baza->GetResultAsArray("SELECT * FROM orderplus_zlecenie WHERE id_zlecenie IN(".implode(",",$Wartosci['nowe_zlecenia']).")", "id_zlecenie");
             $Sumuj = 0;
+            $kursFaktury = $this->Baza->GetValue("SELECT kurs FROM faktury WHERE id_faktury = {$_GET['id']}", "id_faktury");
+
         foreach($Zlecenia as $ZleID => $Zle){
 				echo "<tr>\n";
 					echo "<td>$Licznik</td>\n";
@@ -52,16 +60,14 @@
 
 					if(isset($_GET['spec'])){
                         echo "<td>";
-                        $fakturaCurrency = $this->Baza->GetData("SELECT waluta FROM faktury 
-                        LEFT JOIN faktury_waluty ON faktury.id_waluty = faktury_waluty.id_waluty
-                        WHERE id_faktury = {$_GET['id']}");
                         if ($fakturaCurrency['waluta'] == "PLN") {
-                            echo $Zle['stawka_klient'] . "&nbsp;PLN";
-                            $StawkaPLN = $Zle['stawka_klient'];
+                            $StawkaPLN = $Zle['stawka_klient'] * $kursFaktury;
+                            echo number_format($StawkaPLN, 2, ".", "");
                         } else {
-                            echo $Zle['stawka_klient'] . "&nbsp;{$Zle['waluta']}";
                             $StawkaEUR = $Zle['stawka_klient'];
+                            echo number_format($StawkaEUR, 2, ".", "");
                         }
+
                     }
                     else {
                         echo "<td style='vertical-align: bottom;'>";
